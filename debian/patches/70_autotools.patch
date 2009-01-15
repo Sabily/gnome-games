@@ -1,0 +1,154 @@
+Index: gnome-games-2.24.1.1/configure
+===================================================================
+--- gnome-games-2.24.1.1.orig/configure	2008-11-07 22:35:39.099408661 +0000
++++ gnome-games-2.24.1.1/configure	2008-11-07 22:35:46.759407305 +0000
+@@ -20701,18 +20701,21 @@
+     { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"
+     libxml-2.0 >= \$LIBXML_REQUIRED
+     libgnome-2.0 >= \$LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= \$LIBGNOMEUI_REQUIRED\"") >&5
++    libgnomeui-2.0 >= \$LIBGNOMEUI_REQUIRED
++    launchpad-integration\"") >&5
+   ($PKG_CONFIG --exists --print-errors "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED") 2>&5
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+   pkg_cv_GNOME_CFLAGS=`$PKG_CONFIG --cflags "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED" 2>/dev/null`
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -20728,18 +20731,21 @@
+     { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"
+     libxml-2.0 >= \$LIBXML_REQUIRED
+     libgnome-2.0 >= \$LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= \$LIBGNOMEUI_REQUIRED\"") >&5
++    libgnomeui-2.0 >= \$LIBGNOMEUI_REQUIRED
++    launchpad-integration\"") >&5
+   ($PKG_CONFIG --exists --print-errors "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED") 2>&5
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+   pkg_cv_GNOME_LIBS=`$PKG_CONFIG --libs "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED" 2>/dev/null`
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -20761,12 +20767,14 @@
+ 	        GNOME_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED"`
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration"`
+         else
+ 	        GNOME_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED"`
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration"`
+         fi
+ 	# Put the nasty error message in config.log where it belongs
+ 	echo "$GNOME_PKG_ERRORS" >&5
+@@ -20774,7 +20782,8 @@
+ 	{ { echo "$as_me:$LINENO: error: Package requirements (
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED) were not met:
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration) were not met:
+ 
+ $GNOME_PKG_ERRORS
+ 
+@@ -20788,7 +20797,8 @@
+ echo "$as_me: error: Package requirements (
+     libxml-2.0 >= $LIBXML_REQUIRED
+     libgnome-2.0 >= $LIBGNOME_REQUIRED
+-    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED) were not met:
++    libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
++    launchpad-integration) were not met:
+ 
+ $GNOME_PKG_ERRORS
+ 
+@@ -22350,7 +22360,7 @@
+ do
+   for j in $libggz_header;
+   do
+-    echo "configure: 22353: $i/$j" >&5
++    echo "configure: 22363: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       libggz_incdir=$i
+@@ -22621,7 +22631,7 @@
+ do
+   for j in $ggzmod_header;
+   do
+-    echo "configure: 22624: $i/$j" >&5
++    echo "configure: 22634: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       ggzmod_incdir=$i
+@@ -22761,7 +22771,7 @@
+ do
+   for j in ggz-config;
+   do
+-    echo "configure: 22764: $i/$j" >&5
++    echo "configure: 22774: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       ggz_config_dir=$i
+@@ -22979,7 +22989,7 @@
+ do
+   for j in $libggz_header;
+   do
+-    echo "configure: 22982: $i/$j" >&5
++    echo "configure: 22992: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       libggz_incdir=$i
+@@ -23266,7 +23276,7 @@
+ do
+   for j in $ggzdmod_header;
+   do
+-    echo "configure: 23269: $i/$j" >&5
++    echo "configure: 23279: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       ggzdmod_incdir=$i
+@@ -24361,7 +24371,7 @@
+ do
+   for j in $gnutls_header;
+   do
+-    echo "configure: 24364: $i/$j" >&5
++    echo "configure: 24374: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       gnutls_incdir=$i
+@@ -24452,7 +24462,7 @@
+ do
+   for j in openssl/ssl.h;
+   do
+-    echo "configure: 24455: $i/$j" >&5
++    echo "configure: 24465: $i/$j" >&5
+     if test -r "$i/$j"; then
+       echo "taking that" >&5
+       ssl_incdir=$i

@@ -1,0 +1,3 @@
+debian/tmp/usr/games/*[!d]
+debian/tmp/usr/share/applications
+debian/tmp/usr/lib/gnome-games

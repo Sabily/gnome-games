@@ -1,0 +1,5 @@
+debian/pixmaps/*.xpm /usr/share/pixmaps
+debian/tmp/usr/share/[!a]*[!n]
+debian/tmp/usr/share/gnome-games/icons
+debian/tmp/etc/gconf
+debian/tmp/usr/lib/python*

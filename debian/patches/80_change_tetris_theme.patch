@@ -1,0 +1,13 @@
+Index: gnome-games-2.22.1.1/gnometris/gnometris.schemas.in
+===================================================================
+--- gnome-games-2.22.1.1.orig/gnometris/gnometris.schemas.in	2008-04-09 01:14:33.000000000 +0200
++++ gnome-games-2.22.1.1/gnometris/gnometris.schemas.in	2008-04-09 01:21:13.000000000 +0200
+@@ -19,7 +19,7 @@
+       <applyto>/apps/gnometris/options/theme</applyto>
+       <owner>gnometris</owner>
+       <type>string</type> 
+-      <default>tangoshaded</default>
++      <default>plain</default>
+       <locale name="C">
+         <short>The theme used for rendering the blocks</short>
+         <long>The name of the theme used for rendering the blocks and the background.</long>
