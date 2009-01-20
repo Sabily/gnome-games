@@ -4,7 +4,7 @@ gnome-games (1:2.25.5-0ubuntu1) jaunty; urgency=low
     #262932)
   * debian/patches/01_lpi.patch:
     - adapt to new upstream version
-    - remove old LPI implementation for gnothello (depending on libgnomeiui)
+    - remove old LPI implementation for gnothello (depending on libgnomeui)
       to use gtk_window
   * Remove debian/patches/02_desktop-path.patch: /usr/games in $PATH
   * debian/patches/70_autotools.patch:
