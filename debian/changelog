@@ -1,3 +1,22 @@
+gnome-games (1:2.25.5-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release (LP: #298331, #280755, #237785, #194938, #189734,
+    #262932)
+  * debian/patches/01_lpi.patch:
+    - adapt to new upstream version
+    - remove old LPI implementation for gnothello (depending on libgnomeiui)
+      to use gtk_window
+  * Remove debian/patches/02_desktop-path.patch: /usr/games in $PATH
+  * debian/patches/70_autotools.patch:
+   - run autoreconf in jaunty (libtool 2.2.6) to update the configure and a
+     bunch of files
+  * debian/control.in:
+   - remove libgnome* dependencies
+   - bump libgtk2.0-dev prereq to 2.14.0
+   - regenerate debian/control
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 20 Jan 2009 23:57:13 +0100
+
 gnome-games (1:2.24.1.1-0ubuntu2) jaunty; urgency=low
 
   * Reupload to build on armel.

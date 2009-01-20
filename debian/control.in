@@ -10,11 +10,8 @@ Build-Depends: cdbs,
                quilt,
                intltool (>= 0.35.0), 
                gnome-doc-utils (>= 0.10.0),
-               libgtk2.0-dev (>= 2.12.0),
-               libgnome2-dev (>= 2.16.0), 
-               libgnomeui-dev (>= 2.16.0),
+               libgtk2.0-dev (>= 2.14.0),
                libgconf2-dev (>= 2.10),
-               libgnomevfs2-dev (>= 2.10),
                rarian-compat,
                gettext, 
                gnome-pkg-tools (>= 0.6),
@@ -36,7 +33,7 @@ Build-Depends: cdbs,
                libggz-gtk-dev (>= 0.0.14),
                libgstreamer0.10-dev (>= 0.10.11),
                liblaunchpad-integration-dev (>= 0.1.17)                
-Standards-Version: 3.7.3
+Standards-Version: 3.8.0
 Homepage: http://www.gnome.org/projects/gnome-games/
 
 Package: gnome-games
