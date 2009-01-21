@@ -1,0 +1,221 @@
+Index: gnome-games-2.25.5/aisleriot/freecell.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/aisleriot/freecell.desktop.in.in	2009-01-19 22:51:40.000000000 +0100
++++ gnome-games-2.25.5/aisleriot/freecell.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=FreeCell Solitaire
+ _Comment=Play the popular FreeCell card game
+-Exec=sol --freecell
++Exec=/usr/games/sol --freecell
+ Icon=gnome-freecell
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/aisleriot/sol.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/aisleriot/sol.desktop.in.in	2009-01-19 22:51:40.000000000 +0100
++++ gnome-games-2.25.5/aisleriot/sol.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=AisleRiot Solitaire
+ _Comment=Play many different solitaire games
+-Exec=sol
++Exec=/usr/games/sol
+ Icon=gnome-aisleriot
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/blackjack/data/blackjack.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/blackjack/data/blackjack.desktop.in.in	2009-01-19 22:51:44.000000000 +0100
++++ gnome-games-2.25.5/blackjack/data/blackjack.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Blackjack
+ _Comment=Play the casino card game Blackjack
+-Exec=blackjack
++Exec=/usr/games/blackjack
+ Icon=gnome-blackjack
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/glines/glines.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/glines/glines.desktop.in.in	2009-01-19 22:51:51.000000000 +0100
++++ gnome-games-2.25.5/glines/glines.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Five or More
+ _Comment=Remove colored balls from the board by forming lines
+-Exec=glines
++Exec=/usr/games/glines
+ Icon=gnome-glines
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gnect/data/gnect.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnect/data/gnect.desktop.in.in	2009-01-19 22:51:59.000000000 +0100
++++ gnome-games-2.25.5/gnect/data/gnect.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ Icon=gnome-gnect
+ _Name=Four-in-a-Row
+ _Comment=Make lines of the same color to win
+-Exec=gnect
++Exec=/usr/games/gnect
+ Terminal=false
+ Type=Application
+ Categories=GNOME;GTK;Game;LogicGame;
+Index: gnome-games-2.25.5/gnibbles/gnibbles.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnibbles/gnibbles.desktop.in.in	2009-01-19 22:51:52.000000000 +0100
++++ gnome-games-2.25.5/gnibbles/gnibbles.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Nibbles
+ _Comment=Guide a worm around a maze
+-Exec=gnibbles
++Exec=/usr/games/gnibbles
+ Icon=gnome-gnibbles
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gnobots2/gnobots2.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnobots2/gnobots2.desktop.in.in	2009-01-19 22:51:55.000000000 +0100
++++ gnome-games-2.25.5/gnobots2/gnobots2.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Robots
+ _Comment=Avoid the robots and make them crash into each other
+-Exec=gnobots2
++Exec=/usr/games/gnobots2
+ Icon=gnome-robots
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gnometris/gnometris.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnometris/gnometris.desktop.in.in	2009-01-19 22:51:44.000000000 +0100
++++ gnome-games-2.25.5/gnometris/gnometris.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ _Name=Gnometris
+ _Comment=Fit falling blocks together
+ Icon=gnome-gnometris
+-Exec=gnometris
++Exec=/usr/games/gnometris
+ Terminal=false
+ Type=Application
+ Categories=GNOME;GTK;Game;BlocksGame;
+Index: gnome-games-2.25.5/gnomine/gnomine.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnomine/gnomine.desktop.in.in	2009-01-19 22:51:42.000000000 +0100
++++ gnome-games-2.25.5/gnomine/gnomine.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Mines
+ _Comment=Clear hidden mines from a minefield
+-Exec=gnomine
++Exec=/usr/games/gnomine
+ Icon=gnome-mines
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gnotravex/gnotravex.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnotravex/gnotravex.desktop.in.in	2009-01-19 22:51:45.000000000 +0100
++++ gnome-games-2.25.5/gnotravex/gnotravex.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Tetravex
+ _Comment=Complete the puzzle by matching numbered tiles
+-Exec=gnotravex
++Exec=/usr/games/gnotravex
+ Icon=gnome-tetravex
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gnotski/gnotski.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnotski/gnotski.desktop.in.in	2009-01-19 22:51:50.000000000 +0100
++++ gnome-games-2.25.5/gnotski/gnotski.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ Encoding=UTF-8
+ _Name=Klotski
+ _Comment=Slide blocks to solve the puzzle
+-Exec=gnotski
++Exec=/usr/games/gnotski
+ Icon=gnome-klotski
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/gtali/gtali.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gtali/gtali.desktop.in.in	2009-01-19 22:51:43.000000000 +0100
++++ gnome-games-2.25.5/gtali/gtali.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ Encoding=UTF-8
+ _Name=Tali
+ _Comment=Beat the odds in a poker-style dice game
+-Exec=gtali
++Exec=/usr/games/gtali
+ Icon=gnome-tali
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/iagno/iagno.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/iagno/iagno.desktop.in.in	2009-01-19 22:51:57.000000000 +0100
++++ gnome-games-2.25.5/iagno/iagno.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -3,7 +3,7 @@
+ Icon=gnome-iagno
+ _Name=Iagno
+ _Comment=Dominate the board in a classic version of Reversi
+-Exec=iagno
++Exec=/usr/games/iagno
+ Terminal=false
+ Type=Application
+ Categories=GNOME;GTK;Game;BoardGame;
+Index: gnome-games-2.25.5/mahjongg/mahjongg.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/mahjongg/mahjongg.desktop.in.in	2009-01-19 22:51:55.000000000 +0100
++++ gnome-games-2.25.5/mahjongg/mahjongg.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ Encoding=UTF-8
+ _Name=Mahjongg
+ _Comment=Disassemble a pile of tiles by removing matching pairs
+-Exec=mahjongg
++Exec=/usr/games/mahjongg
+ Icon=gnome-mahjongg
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/same-gnome/same-gnome.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/same-gnome/same-gnome.desktop.in.in	2009-01-19 22:51:53.000000000 +0100
++++ gnome-games-2.25.5/same-gnome/same-gnome.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -2,7 +2,7 @@
+ Encoding=UTF-8
+ _Name=Same GNOME
+ _Comment=Clear the screen by removing groups of colored balls
+-Exec=same-gnome
++Exec=/usr/games/same-gnome
+ Icon=gnome-samegnome
+ Terminal=false
+ Type=Application
+Index: gnome-games-2.25.5/glchess/glchess.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/glchess/glchess.desktop.in.in	2009-01-19 22:51:39.000000000 +0100
++++ gnome-games-2.25.5/glchess/glchess.desktop.in.in	2009-01-21 20:48:36.000000000 +0100
+@@ -2,7 +2,7 @@
+ _Name=Chess
+ _Comment=Play the classic two-player boardgame of chess
+ Version=1.0
+-Exec=glchess
++Exec=/usr/games/glchess
+ Terminal=false
+ Type=Application
+ Categories=GNOME;Game;BoardGame;
+Index: gnome-games-2.25.5/gnome-sudoku/gnome-sudoku.desktop.in.in
+===================================================================
+--- gnome-games-2.25.5.orig/gnome-sudoku/gnome-sudoku.desktop.in.in	2009-01-19 22:52:01.000000000 +0100
++++ gnome-games-2.25.5/gnome-sudoku/gnome-sudoku.desktop.in.in	2009-01-21 20:48:06.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ _Name=Sudoku
+ _Comment=Test your logic skills in this number grid puzzle
+-Exec=gnome-sudoku
++Exec=/usr/games/gnome-sudoku
+ Icon=gnome-sudoku
+ Terminal=false
+ Type=Application

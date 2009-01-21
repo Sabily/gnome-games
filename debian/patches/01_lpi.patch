@@ -1,7 +1,7 @@
 Index: gnome-games-2.25.5/aisleriot/window.c
 ===================================================================
 --- gnome-games-2.25.5.orig/aisleriot/window.c	2009-01-19 22:51:40.000000000 +0100
-+++ gnome-games-2.25.5/aisleriot/window.c	2009-01-20 14:36:04.000000000 +0100
++++ gnome-games-2.25.5/aisleriot/window.c	2009-01-21 21:56:44.000000000 +0100
 @@ -29,6 +29,7 @@
  
  #include <gdk/gdk.h>
@@ -31,7 +31,7 @@ Index: gnome-games-2.25.5/aisleriot/window.c
 Index: gnome-games-2.25.5/blackjack/src/blackjack.cpp
 ===================================================================
 --- gnome-games-2.25.5.orig/blackjack/src/blackjack.cpp	2009-01-19 22:51:43.000000000 +0100
-+++ gnome-games-2.25.5/blackjack/src/blackjack.cpp	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/blackjack/src/blackjack.cpp	2009-01-21 21:56:44.000000000 +0100
 @@ -26,6 +26,7 @@
  #include <string.h>
  #include <glib/gi18n.h>
@@ -61,7 +61,7 @@ Index: gnome-games-2.25.5/blackjack/src/blackjack.cpp
 Index: gnome-games-2.25.5/configure.in
 ===================================================================
 --- gnome-games-2.25.5.orig/configure.in	2009-01-19 22:52:01.000000000 +0100
-+++ gnome-games-2.25.5/configure.in	2009-01-20 14:36:58.000000000 +0100
++++ gnome-games-2.25.5/configure.in	2009-01-21 21:56:44.000000000 +0100
 @@ -502,7 +502,8 @@
  # Check for GNOME modules
  
@@ -75,7 +75,7 @@ Index: gnome-games-2.25.5/configure.in
 Index: gnome-games-2.25.5/glines/glines.c
 ===================================================================
 --- gnome-games-2.25.5.orig/glines/glines.c	2009-01-19 22:51:51.000000000 +0100
-+++ gnome-games-2.25.5/glines/glines.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/glines/glines.c	2009-01-21 21:56:44.000000000 +0100
 @@ -33,6 +33,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -105,7 +105,7 @@ Index: gnome-games-2.25.5/glines/glines.c
 Index: gnome-games-2.25.5/gnect/src/main.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gnect/src/main.c	2009-01-19 22:51:57.000000000 +0100
-+++ gnome-games-2.25.5/gnect/src/main.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnect/src/main.c	2009-01-21 21:56:44.000000000 +0100
 @@ -27,6 +27,7 @@
  
  #include <glib/gi18n.h>
@@ -135,7 +135,7 @@ Index: gnome-games-2.25.5/gnect/src/main.c
 Index: gnome-games-2.25.5/gnibbles/main.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gnibbles/main.c	2009-01-19 22:51:52.000000000 +0100
-+++ gnome-games-2.25.5/gnibbles/main.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnibbles/main.c	2009-01-21 21:56:44.000000000 +0100
 @@ -28,6 +28,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -165,7 +165,7 @@ Index: gnome-games-2.25.5/gnibbles/main.c
 Index: gnome-games-2.25.5/gnobots2/menu.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gnobots2/menu.c	2009-01-19 22:51:55.000000000 +0100
-+++ gnome-games-2.25.5/gnobots2/menu.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnobots2/menu.c	2009-01-21 21:56:44.000000000 +0100
 @@ -25,6 +25,7 @@
  
  #include <glib/gi18n.h>
@@ -195,7 +195,7 @@ Index: gnome-games-2.25.5/gnobots2/menu.c
 Index: gnome-games-2.25.5/gnometris/tetris.cpp
 ===================================================================
 --- gnome-games-2.25.5.orig/gnometris/tetris.cpp	2009-01-19 22:51:44.000000000 +0100
-+++ gnome-games-2.25.5/gnometris/tetris.cpp	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnometris/tetris.cpp	2009-01-21 21:56:44.000000000 +0100
 @@ -30,6 +30,7 @@
  #include <gtk/gtk.h>
  #include <gdk/gdkkeysyms.h>
@@ -226,7 +226,7 @@ Index: gnome-games-2.25.5/gnometris/tetris.cpp
 Index: gnome-games-2.25.5/gnomine/gnomine.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gnomine/gnomine.c	2009-01-19 22:51:42.000000000 +0100
-+++ gnome-games-2.25.5/gnomine/gnomine.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnomine/gnomine.c	2009-01-21 21:56:44.000000000 +0100
 @@ -30,6 +30,7 @@
  
  #include <glib/gi18n.h>
@@ -257,7 +257,7 @@ Index: gnome-games-2.25.5/gnomine/gnomine.c
 Index: gnome-games-2.25.5/gnotski/gnotski.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gnotski/gnotski.c	2009-01-19 22:51:50.000000000 +0100
-+++ gnome-games-2.25.5/gnotski/gnotski.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gnotski/gnotski.c	2009-01-21 21:56:44.000000000 +0100
 @@ -24,6 +24,7 @@
  #include <string.h>
  #include <stdlib.h>
@@ -288,7 +288,7 @@ Index: gnome-games-2.25.5/gnotski/gnotski.c
 Index: gnome-games-2.25.5/gtali/gyahtzee.c
 ===================================================================
 --- gnome-games-2.25.5.orig/gtali/gyahtzee.c	2009-01-19 22:51:43.000000000 +0100
-+++ gnome-games-2.25.5/gtali/gyahtzee.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/gtali/gyahtzee.c	2009-01-21 21:56:44.000000000 +0100
 @@ -43,6 +43,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -319,7 +319,7 @@ Index: gnome-games-2.25.5/gtali/gyahtzee.c
 Index: gnome-games-2.25.5/iagno/gnothello.c
 ===================================================================
 --- gnome-games-2.25.5.orig/iagno/gnothello.c	2009-01-19 22:51:57.000000000 +0100
-+++ gnome-games-2.25.5/iagno/gnothello.c	2009-01-20 14:59:51.000000000 +0100
++++ gnome-games-2.25.5/iagno/gnothello.c	2009-01-21 21:56:44.000000000 +0100
 @@ -48,6 +48,8 @@
  #include <ggz-embed.h>
  #endif /* WITH GGZ_CLIENT */
@@ -350,7 +350,7 @@ Index: gnome-games-2.25.5/iagno/gnothello.c
 Index: gnome-games-2.25.5/mahjongg/mahjongg.c
 ===================================================================
 --- gnome-games-2.25.5.orig/mahjongg/mahjongg.c	2009-01-19 22:51:55.000000000 +0100
-+++ gnome-games-2.25.5/mahjongg/mahjongg.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/mahjongg/mahjongg.c	2009-01-21 21:56:44.000000000 +0100
 @@ -24,6 +24,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -381,7 +381,7 @@ Index: gnome-games-2.25.5/mahjongg/mahjongg.c
 Index: gnome-games-2.25.5/same-gnome/ui.c
 ===================================================================
 --- gnome-games-2.25.5.orig/same-gnome/ui.c	2009-01-19 22:51:53.000000000 +0100
-+++ gnome-games-2.25.5/same-gnome/ui.c	2009-01-20 14:35:13.000000000 +0100
++++ gnome-games-2.25.5/same-gnome/ui.c	2009-01-21 21:56:44.000000000 +0100
 @@ -11,6 +11,8 @@
  #include <gtk/gtk.h>
  #include <glib/gi18n.h>
@@ -409,3 +409,57 @@ Index: gnome-games-2.25.5/same-gnome/ui.c
    gtk_window_add_accel_group (GTK_WINDOW (application),
  			      gtk_ui_manager_get_accel_group (ui_manager));
  
+Index: gnome-games-2.25.5/glchess/src/lib/gtkui/gtkui.py
+===================================================================
+--- gnome-games-2.25.5.orig/glchess/src/lib/gtkui/gtkui.py	2009-01-19 22:51:38.000000000 +0100
++++ gnome-games-2.25.5/glchess/src/lib/gtkui/gtkui.py	2009-01-21 22:01:34.000000000 +0100
+@@ -28,6 +28,7 @@
+     haveGnomeSupport = True
+ 
+ from glchess.defaults import *
++import LaunchpadIntegration
+ 
+ # Stop PyGTK from catching exceptions
+ os.environ['PYGTK_FATAL_EXCEPTIONS'] = '1'
+@@ -251,6 +252,11 @@
+         combo.pack_start(cell, False)
+         combo.add_attribute(cell, 'text', 2)
+ 
++        # Add launchpad integration
++        widget = self._gui.get_widget('help2_menu')
++        LaunchpadIntegration.set_sourcepackagename('gnome-games')
++        LaunchpadIntegration.add_items(widget,1,True,False)
++
+         # Disble help support
+         if haveGnomeSupport:
+             self._gui.get_widget('menu_help').show()
+Index: gnome-games-2.25.5/gnome-sudoku/src/lib/main.py
+===================================================================
+--- gnome-games-2.25.5.orig/gnome-sudoku/src/lib/main.py	2009-01-19 22:52:00.000000000 +0100
++++ gnome-games-2.25.5/gnome-sudoku/src/lib/main.py	2009-01-21 21:56:44.000000000 +0100
+@@ -18,6 +18,7 @@
+ from timer import ActiveTimer
+ from simple_debug import simple_debug,options
+ from dialog_swallower import SwappableArea
++import LaunchpadIntegration
+ 
+ icon_factory = gtk.IconFactory()
+ STOCK_PIXBUFS = {}
+@@ -120,6 +121,7 @@
+         </menu>
+        <menu action="Help">
+          <menuitem action="ShowHelp"/>
++         <placeholder name='LaunchpadItems'/>
+          <menuitem action="About"/>
+        </menu>
+      </menubar>
+@@ -245,6 +247,9 @@
+         self.setup_undo()
+         self.setup_autosave()
+         self.w.add_accel_group(self.uimanager.get_accel_group())
++        # Add launchpad integration
++        LaunchpadIntegration.set_sourcepackagename("gnome-games")
++        LaunchpadIntegration.add_ui(self.uimanager, "/MenuBar/Help/LaunchpadItems")
+         self.setup_main_boxes()        
+         self.setup_tracker_interface()
+         self.setup_toggles()        

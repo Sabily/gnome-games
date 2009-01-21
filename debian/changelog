@@ -5,17 +5,24 @@ gnome-games (1:2.25.5-0ubuntu1) jaunty; urgency=low
   * debian/patches/01_lpi.patch:
     - adapt to new upstream version
     - remove old LPI implementation for gnothello (depending on libgnomeui)
-      to use gtk_window
-  * Remove debian/patches/02_desktop-path.patch: /usr/games in $PATH
+      to use GtkBuilder
+    - add Launchpad integration for glchess (using glade) and gnome-sudoku (using
+      GtkBuilder) (LP: #155269)
+  * debian/patches/02_desktop-path.patch: adapt to new .desktop upstream version
   * debian/patches/70_autotools.patch:
    - run autoreconf in jaunty (libtool 2.2.6) to update the configure and a
      bunch of files
+  * debian/gnome-cards-data.install: take the whole gnome-games-common directory as
+    being only used for card games. theme-install.ini is now in gnome-cards-data
+    package.
   * debian/control.in:
    - remove libgnome* dependencies
    - bump libgtk2.0-dev prereq to 2.14.0
+   - add python-launchpad-integration dependency to satisfy glchess and
+     gnome-soduko python games LPI
    - regenerate debian/control
 
- -- Didier Roche <didrocks@ubuntu.com>  Tue, 20 Jan 2009 23:57:13 +0100
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 21 Jan 2009 21:44:02 +0100
 
 gnome-games (1:2.24.1.1-0ubuntu2) jaunty; urgency=low
 
