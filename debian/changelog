@@ -1,3 +1,24 @@
+gnome-games (1:2.25.90-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release (LP: #324982)
+    General:
+     - Separate needed CFLAGS into each games makefile
+     - Fix warnings with -DGDK_PIXBUF_DISABLE_DEPRECATED
+    Aisleriot:
+     - Fix compiler warnings
+    Chess:
+     - Fix GGZ config file exception handler typo
+    Gnometris:
+     - Translate renderer-noclutter.cpp not renderer.cpp
+     - Fix for crash when setting background image by dnd
+    Mahjongg:
+     - Add scalable icon
+    Translations (de, el, es, fi ko, mr, pl)
+  * Regenerate debian/patches/70_autotools.patch (still with jaunty
+    libtool)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 03 Feb 2009 19:59:09 +0100
+
 gnome-games (1:2.25.5-0ubuntu1) jaunty; urgency=low
 
   * New upstream release (LP: #298331, #280755, #237785, #194938, #189734,
