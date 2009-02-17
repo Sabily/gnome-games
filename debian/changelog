@@ -1,6 +1,6 @@
 gnome-games (1:2.25.91-0ubuntu1) jaunty; urgency=low
 
-  * New upstream release
+  * New upstream release (LP: #330672)
     General:
      - Send bug from bugbuddy to new component 'BugBuddyBugs'
      - Rewrite of GamesFrame
@@ -21,7 +21,7 @@ gnome-games (1:2.25.91-0ubuntu1) jaunty; urgency=low
   * Re-generate debian/patches/70_autotools.patch (still with jaunty
     libtool)
 
- -- Didier Roche <didrocks@ubuntu.com>  Tue, 17 Feb 2009 15:27:50 +0100
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 17 Feb 2009 19:51:48 +0100
 
 gnome-games (1:2.25.90-0ubuntu1) jaunty; urgency=low
 
