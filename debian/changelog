@@ -1,3 +1,28 @@
+gnome-games (1:2.25.91-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+    General:
+     - Send bug from bugbuddy to new component 'BugBuddyBugs'
+     - Rewrite of GamesFrame
+     - Code cleanups
+     - Autogenerate changelogs in po/ from commitlogs
+    Aisleriot:
+     - Fix cards disappearing without pairs in Thirteen
+     - Be more strict about allowing drops in Valentine
+     - Fix crash when clicking an empty stock in Sir Tommy
+     - Always reshuffle the deck properly in Scuffle
+     - Respect the temporary slot setting in the hint code in Ten Across
+    Chess:
+     - Fixed a translator comment
+    Gnometris:
+     - New clutter rendering engine
+    Translations (da, de, es, eu, he, hu, ro, sv, vi, zh_HK, zh_TW)
+  * Adapt debian/patches/01_lpi.patch to make it apply correctly
+  * Re-generate debian/patches/70_autotools.patch (still with jaunty
+    libtool)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 17 Feb 2009 15:27:50 +0100
+
 gnome-games (1:2.25.90-0ubuntu1) jaunty; urgency=low
 
   * New upstream release (LP: #324982)
