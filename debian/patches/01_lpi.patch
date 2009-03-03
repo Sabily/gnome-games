@@ -1,7 +1,7 @@
-Index: gnome-games-2.25.91/aisleriot/window.c
+Index: gnome-games-2.25.92/aisleriot/window.c
 ===================================================================
---- gnome-games-2.25.91.orig/aisleriot/window.c	2009-02-16 23:00:51.000000000 +0100
-+++ gnome-games-2.25.91/aisleriot/window.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/aisleriot/window.c	2009-03-02 22:03:27.000000000 +0100
++++ gnome-games-2.25.92/aisleriot/window.c	2009-03-03 09:50:52.000000000 +0100
 @@ -29,6 +29,7 @@
  
  #include <gdk/gdk.h>
@@ -10,7 +10,7 @@ Index: gnome-games-2.25.91/aisleriot/window.c
  
  #ifdef HAVE_HILDON
  #ifdef HAVE_MAEMO_3
-@@ -2359,6 +2360,7 @@
+@@ -2361,6 +2362,7 @@
          "<menu action='HelpMenu'>"
            "<menuitem action='Contents'/>"
            "<menuitem action='HelpGame'/>"
@@ -18,7 +18,7 @@ Index: gnome-games-2.25.91/aisleriot/window.c
            "<menuitem action='About'/>"
          "</menu>"
  #ifdef ENABLE_DEBUG_UI
-@@ -2603,6 +2605,9 @@
+@@ -2605,6 +2607,9 @@
    accel_group = gtk_ui_manager_get_accel_group (priv->ui_manager);
    gtk_window_add_accel_group (GTK_WINDOW (window), accel_group);
  
@@ -28,10 +28,10 @@ Index: gnome-games-2.25.91/aisleriot/window.c
    action = gtk_action_group_get_action (priv->action_group, "Toolbar");
    priv->toolbar_visible = games_conf_get_boolean (NULL, aisleriot_conf_get_key (CONF_SHOW_TOOLBAR), NULL) != FALSE;
    gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action),
-Index: gnome-games-2.25.91/blackjack/src/blackjack.cpp
+Index: gnome-games-2.25.92/blackjack/src/blackjack.cpp
 ===================================================================
---- gnome-games-2.25.91.orig/blackjack/src/blackjack.cpp	2009-02-16 23:00:55.000000000 +0100
-+++ gnome-games-2.25.91/blackjack/src/blackjack.cpp	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/blackjack/src/blackjack.cpp	2009-03-02 22:03:30.000000000 +0100
++++ gnome-games-2.25.92/blackjack/src/blackjack.cpp	2009-03-03 09:50:52.000000000 +0100
 @@ -26,6 +26,7 @@
  #include <string.h>
  #include <glib/gi18n.h>
@@ -58,10 +58,10 @@ Index: gnome-games-2.25.91/blackjack/src/blackjack.cpp
          actions = gtk_action_group_new ("Actions");
          gtk_action_group_set_translation_domain (actions, GETTEXT_PACKAGE);
          gtk_action_group_add_actions (actions, entries, G_N_ELEMENTS (entries), toplevel_window);
-Index: gnome-games-2.25.91/configure.in
+Index: gnome-games-2.25.92/configure.in
 ===================================================================
---- gnome-games-2.25.91.orig/configure.in	2009-02-16 23:01:16.000000000 +0100
-+++ gnome-games-2.25.91/configure.in	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/configure.in	2009-03-02 22:03:48.000000000 +0100
++++ gnome-games-2.25.92/configure.in	2009-03-03 09:50:52.000000000 +0100
 @@ -502,7 +502,8 @@
  # Check for GNOME modules
  
@@ -72,10 +72,10 @@ Index: gnome-games-2.25.91/configure.in
    AC_SUBST([GNOME_CFLAGS])
    AC_SUBST([GNOME_LIBS])
  
-Index: gnome-games-2.25.91/glines/glines.c
+Index: gnome-games-2.25.92/glines/glines.c
 ===================================================================
---- gnome-games-2.25.91.orig/glines/glines.c	2009-02-16 23:01:04.000000000 +0100
-+++ gnome-games-2.25.91/glines/glines.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/glines/glines.c	2009-03-02 22:03:37.000000000 +0100
++++ gnome-games-2.25.92/glines/glines.c	2009-03-03 09:50:52.000000000 +0100
 @@ -33,6 +33,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -102,10 +102,10 @@ Index: gnome-games-2.25.91/glines/glines.c
    scoreitem = gtk_ui_manager_get_widget (ui_manager,
                                           "/MainMenu/GameMenu/Scores");
    menubar = gtk_ui_manager_get_widget (ui_manager, "/MainMenu");
-Index: gnome-games-2.25.91/gnect/src/main.c
+Index: gnome-games-2.25.92/gnect/src/main.c
 ===================================================================
---- gnome-games-2.25.91.orig/gnect/src/main.c	2009-02-16 23:01:12.000000000 +0100
-+++ gnome-games-2.25.91/gnect/src/main.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnect/src/main.c	2009-03-02 22:03:45.000000000 +0100
++++ gnome-games-2.25.92/gnect/src/main.c	2009-03-03 09:50:52.000000000 +0100
 @@ -27,6 +27,7 @@
  
  #include <glib/gi18n.h>
@@ -132,10 +132,10 @@ Index: gnome-games-2.25.91/gnect/src/main.c
    gtk_window_add_accel_group (GTK_WINDOW (app),
  			      gtk_ui_manager_get_accel_group (ui_manager));
  
-Index: gnome-games-2.25.91/gnibbles/main.c
+Index: gnome-games-2.25.92/gnibbles/main.c
 ===================================================================
---- gnome-games-2.25.91.orig/gnibbles/main.c	2009-02-16 23:01:06.000000000 +0100
-+++ gnome-games-2.25.91/gnibbles/main.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnibbles/main.c	2009-03-02 22:03:39.000000000 +0100
++++ gnome-games-2.25.92/gnibbles/main.c	2009-03-03 09:50:52.000000000 +0100
 @@ -28,6 +28,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -162,10 +162,10 @@ Index: gnome-games-2.25.91/gnibbles/main.c
    new_game_action = gtk_action_group_get_action (action_group, "NewGame");
    scores_action = gtk_action_group_get_action (action_group, "Scores");
    end_game_action = gtk_action_group_get_action (action_group, "EndGame");
-Index: gnome-games-2.25.91/gnobots2/menu.c
+Index: gnome-games-2.25.92/gnobots2/menu.c
 ===================================================================
---- gnome-games-2.25.91.orig/gnobots2/menu.c	2009-02-16 23:01:09.000000000 +0100
-+++ gnome-games-2.25.91/gnobots2/menu.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnobots2/menu.c	2009-03-02 22:03:43.000000000 +0100
++++ gnome-games-2.25.92/gnobots2/menu.c	2009-03-03 09:50:52.000000000 +0100
 @@ -25,6 +25,7 @@
  
  #include <glib/gi18n.h>
@@ -192,10 +192,10 @@ Index: gnome-games-2.25.91/gnobots2/menu.c
    scores_action = gtk_action_group_get_action (action_group, "Scores");
    teleport_action = gtk_action_group_get_action (action_group, "Teleport");
    random_action = gtk_action_group_get_action (action_group, "Random");
-Index: gnome-games-2.25.91/gnometris/tetris.cpp
+Index: gnome-games-2.25.92/gnometris/tetris.cpp
 ===================================================================
---- gnome-games-2.25.91.orig/gnometris/tetris.cpp	2009-02-16 23:00:56.000000000 +0100
-+++ gnome-games-2.25.91/gnometris/tetris.cpp	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnometris/tetris.cpp	2009-03-02 22:03:31.000000000 +0100
++++ gnome-games-2.25.92/gnometris/tetris.cpp	2009-03-03 09:50:52.000000000 +0100
 @@ -30,6 +30,7 @@
  #include <gtk/gtk.h>
  #include <gdk/gdkkeysyms.h>
@@ -223,10 +223,10 @@ Index: gnome-games-2.25.91/gnometris/tetris.cpp
  	accel_group = gtk_ui_manager_get_accel_group (ui_manager);
  	gtk_window_add_accel_group (GTK_WINDOW (w), accel_group);
  
-Index: gnome-games-2.25.91/gnomine/gnomine.c
+Index: gnome-games-2.25.92/gnomine/gnomine.c
 ===================================================================
---- gnome-games-2.25.91.orig/gnomine/gnomine.c	2009-02-16 23:00:52.000000000 +0100
-+++ gnome-games-2.25.91/gnomine/gnomine.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnomine/gnomine.c	2009-03-02 22:03:28.000000000 +0100
++++ gnome-games-2.25.92/gnomine/gnomine.c	2009-03-03 09:50:52.000000000 +0100
 @@ -30,6 +30,7 @@
  
  #include <glib/gi18n.h>
@@ -254,10 +254,10 @@ Index: gnome-games-2.25.91/gnomine/gnomine.c
    hint_action = gtk_action_group_get_action (action_group, "Hint");
  
    fullscreen_action =
-Index: gnome-games-2.25.91/gnotski/gnotski.c
+Index: gnome-games-2.25.92/gnotski/gnotski.c
 ===================================================================
---- gnome-games-2.25.91.orig/gnotski/gnotski.c	2009-02-16 23:01:03.000000000 +0100
-+++ gnome-games-2.25.91/gnotski/gnotski.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gnotski/gnotski.c	2009-03-02 22:03:36.000000000 +0100
++++ gnome-games-2.25.92/gnotski/gnotski.c	2009-03-03 09:50:52.000000000 +0100
 @@ -24,6 +24,7 @@
  #include <string.h>
  #include <stdlib.h>
@@ -285,10 +285,10 @@ Index: gnome-games-2.25.91/gnotski/gnotski.c
    add_puzzle_menu (ui_manager);
  
    accel_group = gtk_ui_manager_get_accel_group (ui_manager);
-Index: gnome-games-2.25.91/gtali/gyahtzee.c
+Index: gnome-games-2.25.92/gtali/gyahtzee.c
 ===================================================================
---- gnome-games-2.25.91.orig/gtali/gyahtzee.c	2009-02-16 23:00:54.000000000 +0100
-+++ gnome-games-2.25.91/gtali/gyahtzee.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/gtali/gyahtzee.c	2009-03-02 22:03:29.000000000 +0100
++++ gnome-games-2.25.92/gtali/gyahtzee.c	2009-03-03 09:50:52.000000000 +0100
 @@ -43,6 +43,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -316,10 +316,10 @@ Index: gnome-games-2.25.91/gtali/gyahtzee.c
    scores_action = gtk_action_group_get_action (action_group, "Scores");
    undo_action   = gtk_action_group_get_action (action_group, "Undo");
    update_undo_sensitivity();
-Index: gnome-games-2.25.91/iagno/gnothello.c
+Index: gnome-games-2.25.92/iagno/gnothello.c
 ===================================================================
---- gnome-games-2.25.91.orig/iagno/gnothello.c	2009-02-16 23:01:11.000000000 +0100
-+++ gnome-games-2.25.91/iagno/gnothello.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/iagno/gnothello.c	2009-03-02 22:03:45.000000000 +0100
++++ gnome-games-2.25.92/iagno/gnothello.c	2009-03-03 09:50:52.000000000 +0100
 @@ -48,6 +48,8 @@
  #include <ggz-embed.h>
  #endif /* WITH GGZ_CLIENT */
@@ -347,10 +347,10 @@ Index: gnome-games-2.25.91/iagno/gnothello.c
    table = gtk_table_new (1, 8, FALSE);
  
    black_score = gtk_label_new (_("Dark:"));
-Index: gnome-games-2.25.91/mahjongg/mahjongg.c
+Index: gnome-games-2.25.92/mahjongg/mahjongg.c
 ===================================================================
---- gnome-games-2.25.91.orig/mahjongg/mahjongg.c	2009-02-16 23:01:08.000000000 +0100
-+++ gnome-games-2.25.91/mahjongg/mahjongg.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/mahjongg/mahjongg.c	2009-03-02 22:03:42.000000000 +0100
++++ gnome-games-2.25.92/mahjongg/mahjongg.c	2009-03-03 09:50:52.000000000 +0100
 @@ -24,6 +24,7 @@
  #include <glib/gi18n.h>
  #include <gtk/gtk.h>
@@ -378,10 +378,10 @@ Index: gnome-games-2.25.91/mahjongg/mahjongg.c
    restart_action = gtk_action_group_get_action (action_group, "RestartGame");
    pause_action = gtk_action_group_get_action (action_group, "PauseGame");
    resume_action = gtk_action_group_get_action (action_group, "ResumeGame");
-Index: gnome-games-2.25.91/same-gnome/ui.c
+Index: gnome-games-2.25.92/same-gnome/ui.c
 ===================================================================
---- gnome-games-2.25.91.orig/same-gnome/ui.c	2009-02-16 23:01:07.000000000 +0100
-+++ gnome-games-2.25.91/same-gnome/ui.c	2009-02-17 10:33:12.000000000 +0100
+--- gnome-games-2.25.92.orig/same-gnome/ui.c	2009-03-02 22:03:41.000000000 +0100
++++ gnome-games-2.25.92/same-gnome/ui.c	2009-03-03 09:50:52.000000000 +0100
 @@ -11,6 +11,8 @@
  #include <gtk/gtk.h>
  #include <glib/gi18n.h>
@@ -409,35 +409,35 @@ Index: gnome-games-2.25.91/same-gnome/ui.c
    gtk_window_add_accel_group (GTK_WINDOW (application),
  			      gtk_ui_manager_get_accel_group (ui_manager));
  
-Index: gnome-games-2.25.91/glchess/src/lib/gtkui/gtkui.py
+Index: gnome-games-2.25.92/glchess/src/lib/gtkui/gtkui.py
 ===================================================================
---- gnome-games-2.25.91.orig/glchess/src/lib/gtkui/gtkui.py	2009-02-16 23:00:49.000000000 +0100
-+++ gnome-games-2.25.91/glchess/src/lib/gtkui/gtkui.py	2009-02-17 10:33:12.000000000 +0100
-@@ -28,6 +28,7 @@
-     haveGnomeSupport = True
+--- gnome-games-2.25.92.orig/glchess/src/lib/gtkui/gtkui.py	2009-03-02 22:03:24.000000000 +0100
++++ gnome-games-2.25.92/glchess/src/lib/gtkui/gtkui.py	2009-03-03 09:53:28.000000000 +0100
+@@ -22,6 +22,7 @@
+ import pango
  
  from glchess.defaults import *
 +import LaunchpadIntegration
  
  # Stop PyGTK from catching exceptions
  os.environ['PYGTK_FATAL_EXCEPTIONS'] = '1'
-@@ -251,6 +252,11 @@
+@@ -240,6 +241,11 @@
+         cell = gtk.CellRendererText()
          combo.pack_start(cell, False)
          combo.add_attribute(cell, 'text', 2)
- 
++
 +        # Add launchpad integration
 +        widget = self._gui.get_widget('help2_menu')
 +        LaunchpadIntegration.set_sourcepackagename('gnome-games')
-+        LaunchpadIntegration.add_items(widget,1,True,False)
-+
-         # Disble help support
-         if haveGnomeSupport:
-             self._gui.get_widget('menu_help').show()
-Index: gnome-games-2.25.91/gnome-sudoku/src/lib/main.py
++        LaunchpadIntegration.add_items(widget,1,True,False)	
+         
+         self._updateViewButtons()
+         
+Index: gnome-games-2.25.92/gnome-sudoku/src/lib/main.py
 ===================================================================
---- gnome-games-2.25.91.orig/gnome-sudoku/src/lib/main.py	2009-02-16 23:01:13.000000000 +0100
-+++ gnome-games-2.25.91/gnome-sudoku/src/lib/main.py	2009-02-17 10:34:56.000000000 +0100
-@@ -18,6 +18,7 @@
+--- gnome-games-2.25.92.orig/gnome-sudoku/src/lib/main.py	2009-03-02 22:03:46.000000000 +0100
++++ gnome-games-2.25.92/gnome-sudoku/src/lib/main.py	2009-03-03 09:50:52.000000000 +0100
+@@ -17,6 +17,7 @@
  from timer import ActiveTimer
  from simple_debug import simple_debug,options
  from dialog_swallower import SwappableArea
@@ -445,7 +445,7 @@ Index: gnome-games-2.25.91/gnome-sudoku/src/lib/main.py
  
  icon_factory = gtk.IconFactory()
  STOCK_PIXBUFS = {}
-@@ -113,6 +114,7 @@
+@@ -112,6 +113,7 @@
          </menu>
        <menu action="Help">
          <menuitem action="ShowHelp"/>
@@ -453,7 +453,7 @@ Index: gnome-games-2.25.91/gnome-sudoku/src/lib/main.py
          <menuitem action="About"/>
        </menu>
      </menubar>
-@@ -214,6 +216,9 @@
+@@ -212,6 +214,9 @@
          self.setup_undo()
          self.setup_autosave()
          self.w.add_accel_group(self.uimanager.get_accel_group())
