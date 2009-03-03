@@ -1,4 +1,4 @@
-gnome-games (1:2.25.92-0ubuntu1) UNRELEASED; urgency=low
+gnome-games (1:2.25.92-0ubuntu1) jaunty; urgency=low
 
   * New upstream release (LP: #337298)
     + Aisleriot:
@@ -15,7 +15,7 @@ gnome-games (1:2.25.92-0ubuntu1) UNRELEASED; urgency=low
   * Adapt debian/patches/01_lpi.patch to make it apply correctly
   * Refresh debian/patches/70_autotools.patch
 
- -- Didier Roche <didrocks@ubuntu.com>  Tue, 03 Mar 2009 17:36:35 +0100
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 03 Mar 2009 17:38:15 +0100
 
 gnome-games (1:2.25.91-0ubuntu1) jaunty; urgency=low
 
