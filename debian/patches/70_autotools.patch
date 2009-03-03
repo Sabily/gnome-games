@@ -1,8 +1,8 @@
 
-Index: gnome-games-2.25.91/configure
+Index: gnome-games-2.25.92/configure
 ===================================================================
---- gnome-games-2.25.91.orig/configure	2009-02-17 10:38:58.000000000 +0100
-+++ gnome-games-2.25.91/configure	2009-02-17 10:44:03.000000000 +0100
+--- gnome-games-2.25.92.orig/configure	2009-03-03 11:41:51.000000000 +0100
++++ gnome-games-2.25.92/configure	2009-03-03 11:42:11.000000000 +0100
 @@ -21466,12 +21466,15 @@
          pkg_cv_GNOME_CFLAGS="$GNOME_CFLAGS"
      else
