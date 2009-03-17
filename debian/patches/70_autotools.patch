@@ -1,9 +1,9 @@
 
-Index: gnome-games-2.25.92/configure
+Index: gnome-games-2.26.0/configure
 ===================================================================
---- gnome-games-2.25.92.orig/configure	2009-03-03 11:41:51.000000000 +0100
-+++ gnome-games-2.25.92/configure	2009-03-03 11:42:11.000000000 +0100
-@@ -21466,12 +21466,15 @@
+--- gnome-games-2.26.0.orig/configure	2009-03-17 07:55:27.000000000 +0100
++++ gnome-games-2.26.0/configure	2009-03-17 07:55:43.000000000 +0100
+@@ -21465,12 +21465,15 @@
          pkg_cv_GNOME_CFLAGS="$GNOME_CFLAGS"
      else
          if test -n "$PKG_CONFIG" && \
@@ -22,7 +22,7 @@ Index: gnome-games-2.25.92/configure
  else
    pkg_failed=yes
  fi
-@@ -21484,12 +21487,15 @@
+@@ -21483,12 +21486,15 @@
          pkg_cv_GNOME_LIBS="$GNOME_LIBS"
      else
          if test -n "$PKG_CONFIG" && \
@@ -41,7 +41,7 @@ Index: gnome-games-2.25.92/configure
  else
    pkg_failed=yes
  fi
-@@ -21508,14 +21514,17 @@
+@@ -21507,14 +21513,17 @@
          _pkg_short_errors_supported=no
  fi
          if test $_pkg_short_errors_supported = yes; then
@@ -62,7 +62,7 @@ Index: gnome-games-2.25.92/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -21526,7 +21535,8 @@
+@@ -21525,7 +21534,8 @@
  and GNOME_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  " >&5
@@ -72,66 +72,66 @@ Index: gnome-games-2.25.92/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -23759,7 +23769,7 @@
+@@ -23758,7 +23768,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 23762: $i/$j" >&5
-+    echo "configure: 23772: $i/$j" >&5
+-    echo "configure: 23761: $i/$j" >&5
++    echo "configure: 23771: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -24033,7 +24043,7 @@
+@@ -24032,7 +24042,7 @@
  do
    for j in $ggzmod_header;
    do
--    echo "configure: 24036: $i/$j" >&5
-+    echo "configure: 24046: $i/$j" >&5
+-    echo "configure: 24035: $i/$j" >&5
++    echo "configure: 24045: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzmod_incdir=$i
-@@ -24173,7 +24183,7 @@
+@@ -24172,7 +24182,7 @@
  do
    for j in ggz-config;
    do
--    echo "configure: 24176: $i/$j" >&5
-+    echo "configure: 24186: $i/$j" >&5
+-    echo "configure: 24175: $i/$j" >&5
++    echo "configure: 24185: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggz_config_dir=$i
-@@ -24391,7 +24401,7 @@
+@@ -24390,7 +24400,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 24394: $i/$j" >&5
-+    echo "configure: 24404: $i/$j" >&5
+-    echo "configure: 24393: $i/$j" >&5
++    echo "configure: 24403: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -24681,7 +24691,7 @@
+@@ -24680,7 +24690,7 @@
  do
    for j in $ggzdmod_header;
    do
--    echo "configure: 24684: $i/$j" >&5
-+    echo "configure: 24694: $i/$j" >&5
+-    echo "configure: 24683: $i/$j" >&5
++    echo "configure: 24693: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzdmod_incdir=$i
-@@ -25796,7 +25806,7 @@
+@@ -25795,7 +25805,7 @@
  do
    for j in $gnutls_header;
    do
--    echo "configure: 25799: $i/$j" >&5
-+    echo "configure: 25809: $i/$j" >&5
+-    echo "configure: 25798: $i/$j" >&5
++    echo "configure: 25808: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        gnutls_incdir=$i
-@@ -25887,7 +25897,7 @@
+@@ -25886,7 +25896,7 @@
  do
    for j in openssl/ssl.h;
    do
--    echo "configure: 25890: $i/$j" >&5
-+    echo "configure: 25900: $i/$j" >&5
+-    echo "configure: 25889: $i/$j" >&5
++    echo "configure: 25899: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ssl_incdir=$i
