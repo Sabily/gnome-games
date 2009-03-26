@@ -1,3 +1,10 @@
+gnome-games (1:2.26.0-0ubuntu3) UNRELEASED; urgency=low
+
+  * debian/control:
+    - Add missing dependency for python-glade2 (LP: #230163)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 26 Mar 2009 19:53:30 +0000
+
 gnome-games (1:2.26.0-0ubuntu2) jaunty; urgency=low
 
   * debian/patches/81_deprecate_gnome_print.patch:
