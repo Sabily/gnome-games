@@ -1,3 +1,9 @@
+gnome-games (1:2.26.0-0ubuntu2) UNRELEASED; urgency=low
+
+  * Patch Sudoku to replace GnomePrint with GtkPrint (LP: #349026)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 26 Mar 2009 15:24:40 +0000
+
 gnome-games (1:2.26.0-0ubuntu1) jaunty; urgency=low
 
   * New upstream release (LP: #344088)
