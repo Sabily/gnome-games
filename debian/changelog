@@ -1,6 +1,9 @@
 gnome-games (1:2.26.0-0ubuntu2) UNRELEASED; urgency=low
 
-  * Patch Sudoku to replace GnomePrint with GtkPrint (LP: #349026)
+  * debian/patches/81_deprecate_gnome_print.patch:
+    - Patch Sudoku to replace GnomePrint with GtkPrint (LP: #349026)
+  * debian/control:
+    - Remove depends on python-gnome2 and python-gnome2-desktop
 
  -- Robert Ancell <robert.ancell@canonical.com>  Thu, 26 Mar 2009 15:24:40 +0000
 
