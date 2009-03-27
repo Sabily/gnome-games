@@ -1,5 +1,7 @@
 gnome-games (1:2.26.0-0ubuntu3) UNRELEASED; urgency=low
 
+  * debian/control:
+    - Add missing dependency for python-glade2 (LP: #230163)
   * debian/patches/81_deprecate_gnome_print.patch:
     - Remove python-gnome dependencies from configure (LP: #349026)
 
