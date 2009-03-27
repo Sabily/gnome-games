@@ -1,3 +1,10 @@
+gnome-games (1:2.26.0-0ubuntu3) UNRELEASED; urgency=low
+
+  * debian/patches/81_deprecate_gnome_print.patch:
+    - Remove python-gnome dependencies from configure (LP: #349026)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 27 Mar 2009 10:46:10 +0000
+
 gnome-games (1:2.26.0-0ubuntu2) jaunty; urgency=low
 
   * debian/patches/81_deprecate_gnome_print.patch:

@@ -1,7 +1,7 @@
 Index: gnome-games-2.26.0/gnome-sudoku/src/lib/game_selector.py
 ===================================================================
---- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/game_selector.py	2009-03-26 14:59:41.000000000 +0000
-+++ gnome-games-2.26.0/gnome-sudoku/src/lib/game_selector.py	2009-03-26 15:00:53.000000000 +0000
+--- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/game_selector.py	2009-02-03 20:00:20.000000000 +0000
++++ gnome-games-2.26.0/gnome-sudoku/src/lib/game_selector.py	2009-03-27 10:44:14.000000000 +0000
 @@ -3,7 +3,6 @@
  import sudoku, saver, sudoku_maker, random
  from sudoku import DifficultyRating as DR
@@ -45,8 +45,8 @@ Index: gnome-games-2.26.0/gnome-sudoku/src/lib/game_selector.py
  
 Index: gnome-games-2.26.0/gnome-sudoku/src/lib/main.py
 ===================================================================
---- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/main.py	2009-03-26 14:59:44.000000000 +0000
-+++ gnome-games-2.26.0/gnome-sudoku/src/lib/main.py	2009-03-26 15:01:12.000000000 +0000
+--- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/main.py	2009-03-27 10:44:14.000000000 +0000
++++ gnome-games-2.26.0/gnome-sudoku/src/lib/main.py	2009-03-27 10:44:14.000000000 +0000
 @@ -820,7 +820,7 @@
  
      @simple_debug
@@ -58,8 +58,8 @@ Index: gnome-games-2.26.0/gnome-sudoku/src/lib/main.py
      def print_multiple_games (self, *args):
 Index: gnome-games-2.26.0/gnome-sudoku/src/lib/printing.py
 ===================================================================
---- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/printing.py	2009-03-26 14:59:48.000000000 +0000
-+++ gnome-games-2.26.0/gnome-sudoku/src/lib/printing.py	2009-03-26 15:01:44.000000000 +0000
+--- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/printing.py	2009-02-03 20:00:20.000000000 +0000
++++ gnome-games-2.26.0/gnome-sudoku/src/lib/printing.py	2009-03-27 10:44:14.000000000 +0000
 @@ -1,271 +1,9 @@
  # -*- coding: utf-8 -*-
 -import gtk, gnomeprint, gnomeprint.ui, math
@@ -421,8 +421,8 @@ Index: gnome-games-2.26.0/gnome-sudoku/src/lib/printing.py
  
 Index: gnome-games-2.26.0/gnome-sudoku/src/lib/sudoku_thumber.py
 ===================================================================
---- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/sudoku_thumber.py	2009-03-26 14:59:53.000000000 +0000
-+++ gnome-games-2.26.0/gnome-sudoku/src/lib/sudoku_thumber.py	2009-03-26 15:02:39.000000000 +0000
+--- gnome-games-2.26.0.orig/gnome-sudoku/src/lib/sudoku_thumber.py	2009-02-03 20:00:20.000000000 +0000
++++ gnome-games-2.26.0/gnome-sudoku/src/lib/sudoku_thumber.py	2009-03-27 10:44:14.000000000 +0000
 @@ -5,54 +5,75 @@
  
  SUDOKU_SIZE = 9
@@ -604,3 +604,47 @@ Index: gnome-games-2.26.0/gnome-sudoku/src/lib/sudoku_thumber.py
 +    w.show_all()
 +    gtk.main()
 +
+Index: gnome-games-2.26.0/README
+===================================================================
+--- gnome-games-2.26.0.orig/README	2009-03-27 10:44:17.000000000 +0000
++++ gnome-games-2.26.0/README	2009-03-27 10:44:29.000000000 +0000
+@@ -218,8 +218,6 @@
+  - GNOME 2.16.0
+  - GTK+ 2.8.0
+  - GNOME Doc Utils - gnome-doc-utils 0.10.0
+- - GNOME Python Desktop - gnome-python-desktop 2.17.3  (python-gnome2)
+- - gnome-python2-gnomeprint
+  - Cairo 1.0
+  - RSVG 2.14.0
+  - Guile 1.8.0
+Index: gnome-games-2.26.0/configure.in
+===================================================================
+--- gnome-games-2.26.0.orig/configure.in	2009-03-27 10:44:16.000000000 +0000
++++ gnome-games-2.26.0/configure.in	2009-03-27 10:44:27.000000000 +0000
+@@ -458,7 +458,6 @@
+ # ********************
+ 
+ PYGTK_REQUIRED=2.10.0
+-GNOME_PYTHON_DESKTOP_REQUIRED=2.17.3
+ 
+ if test "$with_platform" = "hildon" -a "$with_platform_variant" = "maemo3"; then
+ GTK_REQUIRED=2.6.0
+@@ -603,8 +602,7 @@
+ 
+ if test "$have_python" = "yes"; then
+   PKG_CHECK_MODULES([PYGTK],[
+-    pygtk-2.0 >= $PYGTK_REQUIRED
+-    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED],
++    pygtk-2.0 >= $PYGTK_REQUIRED],
+     [have_pygtk=yes],[have_pygtk=no])
+ fi
+ 
+@@ -617,7 +615,7 @@
+ fi
+ 
+ if test "$enable_python" = "no" -a "$need_python" = "yes"; then
+-  AC_MSG_ERROR([Some games need python, but python, pygtk or gnome-python-desktop packages were not found.])
++  AC_MSG_ERROR([Some games need python, but python or pygtk packages were not found.])
+ fi
+ 
+ AM_CONDITIONAL([HAVE_PYTHON],[test "$enable_python" = "yes"])
