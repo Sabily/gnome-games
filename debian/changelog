@@ -1,4 +1,4 @@
-gnome-games (1:2.26.0-0ubuntu3) UNRELEASED; urgency=low
+gnome-games (1:2.26.0-0ubuntu3) jaunty; urgency=low
 
   * debian/control:
     - Add missing dependency for python-glade2 (LP: #230163)
