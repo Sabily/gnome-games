@@ -1,0 +1,123 @@
+Index: gnome-games-2.26.1/aisleriot/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/aisleriot/help/Makefile.am
++++ gnome-games-2.26.1/aisleriot/help/Makefile.am
+@@ -2,7 +2,7 @@
+ 
+ NULL =
+ 
+-DOC_LINGUAS = ca de el es eu fr oc ru sv
++DOC_LINGUAS = ca de es eu fr oc ru sv
+ 
+ DOC_MODULE = aisleriot
+ 
+Index: gnome-games-2.26.1/blackjack/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/blackjack/help/Makefile.am
++++ gnome-games-2.26.1/blackjack/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca da de el en_GB es eu fr oc sv
++DOC_LINGUAS = ca de el en_GB es eu fr oc sv
+ 
+ DOC_MODULE = blackjack
+ 
+Index: gnome-games-2.26.1/glines/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/glines/help/Makefile.am
++++ gnome-games-2.26.1/glines/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv tr
++DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv tr
+ 
+ DOC_MODULE = glines
+ 
+Index: gnome-games-2.26.1/gnect/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnect/help/Makefile.am
++++ gnome-games-2.26.1/gnect/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ 
+ DOC_MODULE = gnect
+ 
+Index: gnome-games-2.26.1/gnibbles/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnibbles/help/Makefile.am
++++ gnome-games-2.26.1/gnibbles/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ 
+ DOC_MODULE = gnibbles
+ 
+Index: gnome-games-2.26.1/gnobots2/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnobots2/help/Makefile.am
++++ gnome-games-2.26.1/gnobots2/help/Makefile.am
+@@ -8,7 +8,7 @@
+ 
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ 
+ DOC_MODULE = gnobots2
+ 
+Index: gnome-games-2.26.1/gnometris/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnometris/help/Makefile.am
++++ gnome-games-2.26.1/gnometris/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv zh_CN
++DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv
+ 
+ DOC_MODULE = gnometris
+ 
+Index: gnome-games-2.26.1/gnomine/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnomine/help/Makefile.am
++++ gnome-games-2.26.1/gnomine/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv zh_CN
++DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
+ 
+ DOC_MODULE = gnomine
+ 
+Index: gnome-games-2.26.1/gnotski/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/gnotski/help/Makefile.am
++++ gnome-games-2.26.1/gnotski/help/Makefile.am
+@@ -1,6 +1,6 @@
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ 
+ DOC_MODULE = gnotski
+ 
+Index: gnome-games-2.26.1/same-gnome/help/Makefile.am
+===================================================================
+--- gnome-games-2.26.1.orig/same-gnome/help/Makefile.am
++++ gnome-games-2.26.1/same-gnome/help/Makefile.am
+@@ -9,7 +9,7 @@
+ 
+ include $(top_srcdir)/gnome-doc-utils.make
+ 
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv
+ 
+ DOC_MODULE = same-gnome
+ 

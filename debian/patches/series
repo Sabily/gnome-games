@@ -2,4 +2,5 @@
 02_desktop-path.patch
 80_change_tetris_theme.patch
 81_deprecate_gnome_print.patch
+exclude_new_translations.patch
 99_autotools.patch

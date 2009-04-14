@@ -1,6 +1,7 @@
-diff -Nur gnome-games-2.26.1/configure gnome-games-2.26.1.ubuntu/configure
---- gnome-games-2.26.1/configure	2009-04-14 05:07:07.000000000 +0200
-+++ gnome-games-2.26.1.ubuntu/configure	2009-04-14 12:52:37.000000000 +0200
+Index: gnome-games-2.26.1/configure
+===================================================================
+--- gnome-games-2.26.1.orig/configure
++++ gnome-games-2.26.1/configure
 @@ -20964,7 +20964,6 @@
  # ********************
  
@@ -209,3 +210,133 @@ diff -Nur gnome-games-2.26.1/configure gnome-games-2.26.1.ubuntu/configure
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ssl_incdir=$i
+Index: gnome-games-2.26.1/aisleriot/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/aisleriot/help/Makefile.in
++++ gnome-games-2.26.1/aisleriot/help/Makefile.in
+@@ -427,7 +427,7 @@
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+ NULL = 
+-DOC_LINGUAS = ca de el es eu fr oc ru sv
++DOC_LINGUAS = ca de es eu fr oc ru sv
+ DOC_MODULE = aisleriot
+ DOC_ENTITIES = \
+ 	accordion.xml \
+Index: gnome-games-2.26.1/blackjack/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/blackjack/help/Makefile.in
++++ gnome-games-2.26.1/blackjack/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca da de el en_GB es eu fr oc sv
++DOC_LINGUAS = ca de el en_GB es eu fr oc sv
+ DOC_MODULE = blackjack
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/glines/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/glines/help/Makefile.in
++++ gnome-games-2.26.1/glines/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv tr
++DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv tr
+ DOC_MODULE = glines
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/gnect/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnect/help/Makefile.in
++++ gnome-games-2.26.1/gnect/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ DOC_MODULE = gnect
+ DOC_ENTITIES = \
+ 	network-games.xml \
+Index: gnome-games-2.26.1/gnibbles/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnibbles/help/Makefile.in
++++ gnome-games-2.26.1/gnibbles/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ DOC_MODULE = gnibbles
+ DOC_ENTITIES = \
+ 	legal.xml \
+Index: gnome-games-2.26.1/gnobots2/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnobots2/help/Makefile.in
++++ gnome-games-2.26.1/gnobots2/help/Makefile.in
+@@ -445,7 +445,7 @@
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+ 
+ # GNOME doc utils
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ DOC_MODULE = gnobots2
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/gnometris/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnometris/help/Makefile.in
++++ gnome-games-2.26.1/gnometris/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv zh_CN
++DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv
+ DOC_MODULE = gnometris
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/gnomine/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnomine/help/Makefile.in
++++ gnome-games-2.26.1/gnomine/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv zh_CN
++DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
+ DOC_MODULE = gnomine
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/gnotski/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/gnotski/help/Makefile.in
++++ gnome-games-2.26.1/gnotski/help/Makefile.in
+@@ -426,7 +426,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc sv
+ DOC_MODULE = gnotski
+ DOC_ENTITIES = \
+ 	legal.xml
+Index: gnome-games-2.26.1/same-gnome/help/Makefile.in
+===================================================================
+--- gnome-games-2.26.1.orig/same-gnome/help/Makefile.in
++++ gnome-games-2.26.1/same-gnome/help/Makefile.in
+@@ -435,7 +435,7 @@
+ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
+ _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
+ _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
+-DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv
++DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv
+ DOC_MODULE = same-gnome
+ DOC_ENTITIES = 
+ DOC_INCLUDES = \

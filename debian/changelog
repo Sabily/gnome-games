@@ -1,3 +1,11 @@
+gnome-games (1:2.26.1-0ubuntu2) jaunty; urgency=low
+
+  * debian/patches/exclude_new_translations.patch: back out the late-added
+    Greek, Danish, and Chinese translations from the package, as this
+    pushes the CD oversized just days before RC.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 14 Apr 2009 19:52:07 +0000
+
 gnome-games (1:2.26.1-0ubuntu1) jaunty; urgency=low
 
   * New upstream version
