@@ -44,7 +44,6 @@ Depends: ${shlibs:Depends},
          librsvg2-common,
          ${python:Depends},
          python-gtk2 (>= 2.10.0),
-         python-glade2,	 
          python-launchpad-integration,
          gstreamer0.10-plugins-base
 Suggests: python-gtkglext1, python-opengl, gnome-hearts, gnome-games-extra-data

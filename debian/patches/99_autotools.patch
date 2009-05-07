@@ -1,19 +1,81 @@
-Index: gnome-games-2.26.1/configure
+Index: gnome-games-2.27.1/configure
 ===================================================================
---- gnome-games-2.26.1.orig/configure
-+++ gnome-games-2.26.1/configure
-@@ -20964,7 +20964,6 @@
- # ********************
+--- gnome-games-2.27.1.orig/configure	2009-05-07 17:01:18.000000000 +1000
++++ gnome-games-2.27.1/configure	2009-05-07 17:02:06.000000000 +1000
+@@ -13696,6 +13696,9 @@
+   openbsd*)
+     with_gnu_ld=no
+     ;;
++  linux* | k*bsd*-gnu)
++    link_all_deplibs=no
++    ;;
+   esac
  
- PYGTK_REQUIRED=2.10.0
--GNOME_PYTHON_DESKTOP_REQUIRED=2.17.3
+   ld_shlibs=yes
+@@ -16390,7 +16393,7 @@
+   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
+   lt_status=$lt_dlunknown
+   cat > conftest.$ac_ext <<_LT_EOF
+-#line 16393 "configure"
++#line 16396 "configure"
+ #include "confdefs.h"
  
- if test "$with_platform" = "hildon" -a "$with_platform_variant" = "maemo3"; then
- GTK_REQUIRED=2.6.0
-@@ -21431,12 +21430,15 @@
-     pkg_cv_GNOME_CFLAGS="$GNOME_CFLAGS"
-  elif test -n "$PKG_CONFIG"; then
-     if test -n "$PKG_CONFIG" && \
+ #if HAVE_DLFCN_H
+@@ -16486,7 +16489,7 @@
+   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
+   lt_status=$lt_dlunknown
+   cat > conftest.$ac_ext <<_LT_EOF
+-#line 16489 "configure"
++#line 16492 "configure"
+ #include "confdefs.h"
+ 
+ #if HAVE_DLFCN_H
+@@ -18506,11 +18509,11 @@
+    -e 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
+    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
+    -e 's:$: $lt_compiler_flag:'`
+-   (eval echo "\"\$as_me:18509: $lt_compile\"" >&5)
++   (eval echo "\"\$as_me:18512: $lt_compile\"" >&5)
+    (eval "$lt_compile" 2>conftest.err)
+    ac_status=$?
+    cat conftest.err >&5
+-   echo "$as_me:18513: \$? = $ac_status" >&5
++   echo "$as_me:18516: \$? = $ac_status" >&5
+    if (exit $ac_status) && test -s "$ac_outfile"; then
+      # The compiler can only warn and ignore the option if not recognized
+      # So say no if there are warnings other than the usual output.
+@@ -18605,11 +18608,11 @@
+    -e 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
+    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
+    -e 's:$: $lt_compiler_flag:'`
+-   (eval echo "\"\$as_me:18608: $lt_compile\"" >&5)
++   (eval echo "\"\$as_me:18611: $lt_compile\"" >&5)
+    (eval "$lt_compile" 2>out/conftest.err)
+    ac_status=$?
+    cat out/conftest.err >&5
+-   echo "$as_me:18612: \$? = $ac_status" >&5
++   echo "$as_me:18615: \$? = $ac_status" >&5
+    if (exit $ac_status) && test -s out/conftest2.$ac_objext
+    then
+      # The compiler can only warn and ignore the option if not recognized
+@@ -18657,11 +18660,11 @@
+    -e 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
+    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
+    -e 's:$: $lt_compiler_flag:'`
+-   (eval echo "\"\$as_me:18660: $lt_compile\"" >&5)
++   (eval echo "\"\$as_me:18663: $lt_compile\"" >&5)
+    (eval "$lt_compile" 2>out/conftest.err)
+    ac_status=$?
+    cat out/conftest.err >&5
+-   echo "$as_me:18664: \$? = $ac_status" >&5
++   echo "$as_me:18667: \$? = $ac_status" >&5
+    if (exit $ac_status) && test -s out/conftest2.$ac_objext
+    then
+      # The compiler can only warn and ignore the option if not recognized
+@@ -21493,12 +21496,15 @@
+         pkg_cv_GNOME_CFLAGS="$GNOME_CFLAGS"
+     else
+         if test -n "$PKG_CONFIG" && \
 -    { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"gconf-2.0 >= \$GCONF_REQUIRED\"") >&5
 -  ($PKG_CONFIG --exists --print-errors "gconf-2.0 >= $GCONF_REQUIRED") 2>&5
 +    { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"gconf-2.0 >= \$GCONF_REQUIRED
@@ -29,10 +91,10 @@ Index: gnome-games-2.26.1/configure
  else
    pkg_failed=yes
  fi
-@@ -21447,12 +21449,15 @@
-     pkg_cv_GNOME_LIBS="$GNOME_LIBS"
-  elif test -n "$PKG_CONFIG"; then
-     if test -n "$PKG_CONFIG" && \
+@@ -21511,12 +21517,15 @@
+         pkg_cv_GNOME_LIBS="$GNOME_LIBS"
+     else
+         if test -n "$PKG_CONFIG" && \
 -    { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"gconf-2.0 >= \$GCONF_REQUIRED\"") >&5
 -  ($PKG_CONFIG --exists --print-errors "gconf-2.0 >= $GCONF_REQUIRED") 2>&5
 +    { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"gconf-2.0 >= \$GCONF_REQUIRED
@@ -48,17 +110,17 @@ Index: gnome-games-2.26.1/configure
  else
    pkg_failed=yes
  fi
-@@ -21470,14 +21475,17 @@
+@@ -21535,14 +21544,17 @@
          _pkg_short_errors_supported=no
  fi
          if test $_pkg_short_errors_supported = yes; then
--	        GNOME_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors "gconf-2.0 >= $GCONF_REQUIRED" 2>&1`
-+	        GNOME_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors "gconf-2.0 >= $GCONF_REQUIRED
-+                             launchpad-integration" 2>&1`
+-	        GNOME_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "gconf-2.0 >= $GCONF_REQUIRED"`
++	        GNOME_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "gconf-2.0 >= $GCONF_REQUIRED
++                             launchpad-integration"`
          else
--	        GNOME_PKG_ERRORS=`$PKG_CONFIG --print-errors "gconf-2.0 >= $GCONF_REQUIRED" 2>&1`
-+	        GNOME_PKG_ERRORS=`$PKG_CONFIG --print-errors "gconf-2.0 >= $GCONF_REQUIRED
-+                             launchpad-integration" 2>&1`
+-	        GNOME_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "gconf-2.0 >= $GCONF_REQUIRED"`
++	        GNOME_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "gconf-2.0 >= $GCONF_REQUIRED
++                             launchpad-integration"`
          fi
  	# Put the nasty error message in config.log where it belongs
  	echo "$GNOME_PKG_ERRORS" >&5
@@ -69,7 +131,7 @@ Index: gnome-games-2.26.1/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -21488,7 +21496,8 @@
+@@ -21553,7 +21565,8 @@
  and GNOME_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  " >&5
@@ -79,264 +141,66 @@ Index: gnome-games-2.26.1/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -22411,17 +22420,14 @@
-  elif test -n "$PKG_CONFIG"; then
-     if test -n "$PKG_CONFIG" && \
-     { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"
--    pygtk-2.0 >= \$PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= \$GNOME_PYTHON_DESKTOP_REQUIRED\"") >&5
-+    pygtk-2.0 >= \$PYGTK_REQUIRED\"") >&5
-   ($PKG_CONFIG --exists --print-errors "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED") 2>&5
-+    pygtk-2.0 >= $PYGTK_REQUIRED") 2>&5
-   ac_status=$?
-   $as_echo "$as_me:$LINENO: \$? = $ac_status" >&5
-   (exit $ac_status); }; then
-   pkg_cv_PYGTK_CFLAGS=`$PKG_CONFIG --cflags "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED" 2>/dev/null`
-+    pygtk-2.0 >= $PYGTK_REQUIRED" 2>/dev/null`
- else
-   pkg_failed=yes
- fi
-@@ -22433,17 +22439,14 @@
-  elif test -n "$PKG_CONFIG"; then
-     if test -n "$PKG_CONFIG" && \
-     { ($as_echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"
--    pygtk-2.0 >= \$PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= \$GNOME_PYTHON_DESKTOP_REQUIRED\"") >&5
-+    pygtk-2.0 >= \$PYGTK_REQUIRED\"") >&5
-   ($PKG_CONFIG --exists --print-errors "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED") 2>&5
-+    pygtk-2.0 >= $PYGTK_REQUIRED") 2>&5
-   ac_status=$?
-   $as_echo "$as_me:$LINENO: \$? = $ac_status" >&5
-   (exit $ac_status); }; then
-   pkg_cv_PYGTK_LIBS=`$PKG_CONFIG --libs "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED" 2>/dev/null`
-+    pygtk-2.0 >= $PYGTK_REQUIRED" 2>/dev/null`
- else
-   pkg_failed=yes
- fi
-@@ -22462,12 +22465,10 @@
- fi
-         if test $_pkg_short_errors_supported = yes; then
- 	        PYGTK_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED" 2>&1`
-+    pygtk-2.0 >= $PYGTK_REQUIRED" 2>&1`
-         else
- 	        PYGTK_PKG_ERRORS=`$PKG_CONFIG --print-errors "
--    pygtk-2.0 >= $PYGTK_REQUIRED
--    gnome-python-desktop-2.0 >= $GNOME_PYTHON_DESKTOP_REQUIRED" 2>&1`
-+    pygtk-2.0 >= $PYGTK_REQUIRED" 2>&1`
-         fi
- 	# Put the nasty error message in config.log where it belongs
- 	echo "$PYGTK_PKG_ERRORS" >&5
-@@ -22495,8 +22496,8 @@
- fi
- 
- if test "$enable_python" = "no" -a "$need_python" = "yes"; then
--  { { $as_echo "$as_me:$LINENO: error: Some games need python, but python, pygtk or gnome-python-desktop packages were not found." >&5
--$as_echo "$as_me: error: Some games need python, but python, pygtk or gnome-python-desktop packages were not found." >&2;}
-+  { { $as_echo "$as_me:$LINENO: error: Some games need python, but python or pygtk packages were not found." >&5
-+$as_echo "$as_me: error: Some games need python, but python or pygtk packages were not found." >&2;}
-    { (exit 1); exit 1; }; }
- fi
- 
-@@ -23685,7 +23686,7 @@
+@@ -23763,7 +23776,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 23688: $i/$j" >&5
-+    echo "configure: 23689: $i/$j" >&5
+-    echo "configure: 23766: $i/$j" >&5
++    echo "configure: 23779: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -23959,7 +23960,7 @@
+@@ -24037,7 +24050,7 @@
  do
    for j in $ggzmod_header;
    do
--    echo "configure: 23962: $i/$j" >&5
-+    echo "configure: 23963: $i/$j" >&5
+-    echo "configure: 24040: $i/$j" >&5
++    echo "configure: 24053: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzmod_incdir=$i
-@@ -24099,7 +24100,7 @@
+@@ -24177,7 +24190,7 @@
  do
    for j in ggz-config;
    do
--    echo "configure: 24102: $i/$j" >&5
-+    echo "configure: 24103: $i/$j" >&5
+-    echo "configure: 24180: $i/$j" >&5
++    echo "configure: 24193: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggz_config_dir=$i
-@@ -24317,7 +24318,7 @@
+@@ -24395,7 +24408,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 24320: $i/$j" >&5
-+    echo "configure: 24321: $i/$j" >&5
+-    echo "configure: 24398: $i/$j" >&5
++    echo "configure: 24411: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -24607,7 +24608,7 @@
+@@ -24685,7 +24698,7 @@
  do
    for j in $ggzdmod_header;
    do
--    echo "configure: 24610: $i/$j" >&5
-+    echo "configure: 24611: $i/$j" >&5
+-    echo "configure: 24688: $i/$j" >&5
++    echo "configure: 24701: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzdmod_incdir=$i
-@@ -25722,7 +25723,7 @@
+@@ -25800,7 +25813,7 @@
  do
    for j in $gnutls_header;
    do
--    echo "configure: 25725: $i/$j" >&5
-+    echo "configure: 25726: $i/$j" >&5
+-    echo "configure: 25803: $i/$j" >&5
++    echo "configure: 25816: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        gnutls_incdir=$i
-@@ -25813,7 +25814,7 @@
+@@ -25891,7 +25904,7 @@
  do
    for j in openssl/ssl.h;
    do
--    echo "configure: 25816: $i/$j" >&5
-+    echo "configure: 25817: $i/$j" >&5
+-    echo "configure: 25894: $i/$j" >&5
++    echo "configure: 25907: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ssl_incdir=$i
-Index: gnome-games-2.26.1/aisleriot/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/aisleriot/help/Makefile.in
-+++ gnome-games-2.26.1/aisleriot/help/Makefile.in
-@@ -427,7 +427,7 @@
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
- NULL = 
--DOC_LINGUAS = ca de el es eu fr oc ru sv
-+DOC_LINGUAS = ca de es eu fr oc ru sv
- DOC_MODULE = aisleriot
- DOC_ENTITIES = \
- 	accordion.xml \
-Index: gnome-games-2.26.1/blackjack/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/blackjack/help/Makefile.in
-+++ gnome-games-2.26.1/blackjack/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca da de el en_GB es eu fr oc sv
-+DOC_LINGUAS = ca de el en_GB es eu fr oc sv
- DOC_MODULE = blackjack
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/glines/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/glines/help/Makefile.in
-+++ gnome-games-2.26.1/glines/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv tr
-+DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv tr
- DOC_MODULE = glines
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/gnect/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnect/help/Makefile.in
-+++ gnome-games-2.26.1/gnect/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
-+DOC_LINGUAS = ca de en_GB es eu fr it oc sv
- DOC_MODULE = gnect
- DOC_ENTITIES = \
- 	network-games.xml \
-Index: gnome-games-2.26.1/gnibbles/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnibbles/help/Makefile.in
-+++ gnome-games-2.26.1/gnibbles/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
-+DOC_LINGUAS = ca de en_GB es eu fr it oc sv
- DOC_MODULE = gnibbles
- DOC_ENTITIES = \
- 	legal.xml \
-Index: gnome-games-2.26.1/gnobots2/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnobots2/help/Makefile.in
-+++ gnome-games-2.26.1/gnobots2/help/Makefile.in
-@@ -445,7 +445,7 @@
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
- 
- # GNOME doc utils
--DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
-+DOC_LINGUAS = ca de en_GB es eu fr it oc sv
- DOC_MODULE = gnobots2
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/gnometris/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnometris/help/Makefile.in
-+++ gnome-games-2.26.1/gnometris/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv zh_CN
-+DOC_LINGUAS = ca de el en_GB es eu fi fr it oc sv
- DOC_MODULE = gnometris
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/gnomine/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnomine/help/Makefile.in
-+++ gnome-games-2.26.1/gnomine/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc sv zh_CN
-+DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
- DOC_MODULE = gnomine
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/gnotski/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/gnotski/help/Makefile.in
-+++ gnome-games-2.26.1/gnotski/help/Makefile.in
-@@ -426,7 +426,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc sv
-+DOC_LINGUAS = ca de en_GB es eu fr it oc sv
- DOC_MODULE = gnotski
- DOC_ENTITIES = \
- 	legal.xml
-Index: gnome-games-2.26.1/same-gnome/help/Makefile.in
-===================================================================
---- gnome-games-2.26.1.orig/same-gnome/help/Makefile.in
-+++ gnome-games-2.26.1/same-gnome/help/Makefile.in
-@@ -435,7 +435,7 @@
- _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
- _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
- _clean_dir = $(if $(DOC_MODULE),clean-doc-dir)
--DOC_LINGUAS = ca de el en_GB es eu fr it oc ru sv
-+DOC_LINGUAS = ca de en_GB es eu fr it oc ru sv
- DOC_MODULE = same-gnome
- DOC_ENTITIES = 
- DOC_INCLUDES = \
