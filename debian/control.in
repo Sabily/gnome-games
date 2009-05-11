@@ -10,7 +10,7 @@ Build-Depends: cdbs,
                quilt,
                intltool (>= 0.35.0), 
                gnome-doc-utils (>= 0.10.0),
-               libgtk2.0-dev (>= 2.14.0),
+               libgtk2.0-dev (>= 2.16.0),
                libgconf2-dev (>= 2.10),
                rarian-compat,
                gettext, 
@@ -22,11 +22,10 @@ Build-Depends: cdbs,
                libesd0-dev,
                libcairo2-dev,
                python (>= 2.5),
-               python-gtk2-dev (>= 2.10.0), 
+               python-gtk2-dev (>= 2.14.0),
                pkg-config,
                python-support (>= 0.3),
                libxml2-dev (>= 2.4.0),
-               libglade2-dev,
                libggzmod-dev (>= 0.0.14),
                libggzdmod-dev (>= 0.0.14),
                libggz-gtk-dev (>= 0.0.14),
@@ -66,7 +65,6 @@ Description: games for the GNOME desktop
   * gnibbles - snake game, up to four players
   * gnobots2 - improved old BSD robots game
   * gnome-sudoku - Sudoku puzzle
-  * gnometris - Tetris, the popular Russian game
   * gnomine - popular minesweeper puzzle game
   * gnotravex - puzzle where you match tile edges together
   * gnotski - klotski puzzle game

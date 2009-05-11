@@ -13,8 +13,12 @@ gnome-games (1:2.27.1-0ubuntu1) karmic; urgency=low
     - refreshed
   * debian/rules:
     - Disabled gnometris as it requires clutter to build
+  * debian/control.in:
+    - Drop dependency on Glade
+    - Bump up versions of Gtk+ and PyGtk
+    - Remove gnometris from description
 
- -- Robert Ancell <robert.ancell@canonical.com>  Thu, 07 May 2009 16:20:38 +1000
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 11 May 2009 16:20:38 +1000
 
 gnome-games (1:2.26.1-0ubuntu2) jaunty; urgency=low
 
