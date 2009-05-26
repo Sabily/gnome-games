@@ -14,7 +14,6 @@ DEB_CONFIGURE_EXTRA_FLAGS := --bindir=\$${prefix}/games \
 		--with-ggzconfig=/usr/bin \
 		--with-ggz-server=force \
 		--disable-scrollkeeper \
-		--with-sound=gstreamer \
 		--enable-omitgames=gnometris
 DEB_DH_FIXPERMS_ARGS := -X/usr/games
 DEB_DH_MAKESHLIBS_ARGS_gnome-games := --no-act

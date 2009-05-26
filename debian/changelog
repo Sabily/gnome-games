@@ -1,3 +1,12 @@
+gnome-games (1:2.27.2-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream version (LP: #380516)
+  * debian/patches/01_lpi.patch: Fix glChess LP integration (LP: #379190)
+  * debian/rules:
+    debian/control.in: Use libcanberra for sound
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 26 May 2009 10:19:15 +0200
+
 gnome-games (1:2.27.1-0ubuntu1) karmic; urgency=low
 
   * New upstream version (LP: #373097)

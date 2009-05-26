@@ -1,7 +1,7 @@
-Index: gnome-games-2.27.1/gnometris/gnometris.schemas.in
+Index: gnome-games-2.27.2/gnometris/gnometris.schemas.in
 ===================================================================
---- gnome-games-2.27.1.orig/gnometris/gnometris.schemas.in	2009-05-07 16:48:28.000000000 +1000
-+++ gnome-games-2.27.1/gnometris/gnometris.schemas.in	2009-05-07 16:48:43.000000000 +1000
+--- gnome-games-2.27.2.orig/gnometris/gnometris.schemas.in	2009-05-25 21:39:29.000000000 +0200
++++ gnome-games-2.27.2/gnometris/gnometris.schemas.in	2009-05-26 10:27:29.000000000 +0200
 @@ -18,7 +18,7 @@
        <applyto>/apps/gnometris/options/theme</applyto>
        <owner>gnometris</owner>

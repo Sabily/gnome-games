@@ -29,7 +29,7 @@ Build-Depends: cdbs,
                libggzmod-dev (>= 0.0.14),
                libggzdmod-dev (>= 0.0.14),
                libggz-gtk-dev (>= 0.0.14),
-               libgstreamer0.10-dev (>= 0.10.11),
+               libcanberra-gtk0-dev,
                liblaunchpad-integration-dev (>= 0.1.17)                
 Standards-Version: 3.8.0
 Homepage: http://www.gnome.org/projects/gnome-games/
@@ -44,7 +44,7 @@ Depends: ${shlibs:Depends},
          ${python:Depends},
          python-gtk2 (>= 2.10.0),
          python-launchpad-integration,
-         gstreamer0.10-plugins-base
+         libcanberra-gtk0
 Suggests: python-gtkglext1, python-opengl, gnome-hearts, gnome-games-extra-data
 Conflicts: gnome-sudoku,
            glchess
