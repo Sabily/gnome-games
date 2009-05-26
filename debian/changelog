@@ -2,6 +2,10 @@ gnome-games (1:2.27.2-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream version (LP: #380516)
   * debian/patches/01_lpi.patch: Fix glChess LP integration (LP: #379190)
+  * debian/patches/01_lpi.patch:
+  * debian/patches/80_change_tetris_theme.patch:
+  * debian/patches/02_desktop-path.patch:
+  * debian/patches/99_autotools.patch: Refreshed
   * debian/rules:
     debian/control.in: Use libcanberra for sound
 
