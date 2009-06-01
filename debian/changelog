@@ -1,3 +1,38 @@
+gnome-games (1:2.27.2-0ubuntu1) karmic; urgency=low
+
+  * New upstream version (LP: #380516)
+  * debian/patches/01_lpi.patch: Fix glChess LP integration (LP: #379190)
+  * debian/patches/01_lpi.patch:
+  * debian/patches/80_change_tetris_theme.patch:
+  * debian/patches/02_desktop-path.patch:
+  * debian/patches/99_autotools.patch: Refreshed
+  * debian/rules:
+    debian/control.in: Use libcanberra for sound
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 28 May 2009 10:58:26 +0200
+
+gnome-games (1:2.27.1-0ubuntu1) karmic; urgency=low
+
+  * New upstream version (LP: #373097)
+  * debian/patches/exclude_new_translations.patch:
+    - not required for Karmic
+  * debian/patches/81_deprecate_gnome_print.patch:
+    - obsolete, change is upstream
+  * debian/patches/99_autoconf.patch
+    - no longer required
+  * debian/patches/01_lpi.patch:
+    debian/patches/80_change_tetris_theme.patch:
+    debian/patches/99_autotools.patch:    
+    - refreshed
+  * debian/rules:
+    - Disabled gnometris as it requires clutter to build
+  * debian/control.in:
+    - Drop dependency on Glade
+    - Bump up versions of Gtk+ and PyGtk
+    - Remove gnometris from description
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 11 May 2009 16:20:38 +1000
+
 gnome-games (1:2.26.1-0ubuntu2) jaunty; urgency=low
 
   * debian/patches/exclude_new_translations.patch: back out the late-added
