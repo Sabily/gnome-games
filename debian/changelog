@@ -1,3 +1,11 @@
+gnome-games (1:2.27.3-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream version (LP: #387722)
+  * debian/patches/99_autotools.patch:
+    - Refreshed
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 17 Jun 2009 12:57:41 +1000
+
 gnome-games (1:2.27.2-0ubuntu1) karmic; urgency=low
 
   * New upstream version (LP: #380516)
