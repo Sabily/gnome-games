@@ -1,3 +1,9 @@
+gnome-games (1:2.27.3-0ubuntu2) UNRELEASED; urgency=low
+
+  * debian/rules: Run with --disable-tests so don't need build-depends on 'check' (LP: #388834)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 18 Jun 2009 17:50:36 +1000
+
 gnome-games (1:2.27.3-0ubuntu1) karmic; urgency=low
 
   * New upstream version (LP: #387722)
