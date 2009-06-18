@@ -1,4 +1,4 @@
-gnome-games (1:2.27.3-0ubuntu2) UNRELEASED; urgency=low
+gnome-games (1:2.27.3-0ubuntu2) karmic; urgency=low
 
   * debian/rules: Run with --disable-tests so don't need build-depends on 'check' (LP: #388834)
 
