@@ -30,6 +30,7 @@ Build-Depends: cdbs,
                libggzdmod-dev (>= 0.0.14),
                libggz-gtk-dev (>= 0.0.14),
                libcanberra-gtk-dev,
+               check,
                liblaunchpad-integration-dev (>= 0.1.17)                
 Standards-Version: 3.8.0
 Homepage: http://www.gnome.org/projects/gnome-games/
@@ -112,4 +113,3 @@ Description: GGZ gaming zone servers for the GNOME games
   * gnect - four in a row game
   * gnibbles - snake game, up to four players
   * iagno - the popular Othello game
-

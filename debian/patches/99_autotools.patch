@@ -1,8 +1,8 @@
-Index: gnome-games-2.27.4/configure
+Index: gnome-games-2.27.5/configure
 ===================================================================
---- gnome-games-2.27.4.orig/configure	2009-07-14 09:07:38.000000000 +1000
-+++ gnome-games-2.27.4/configure	2009-07-14 09:07:58.000000000 +1000
-@@ -21799,12 +21799,15 @@
+--- gnome-games-2.27.5.orig/configure	2009-07-28 10:18:09.000000000 +1000
++++ gnome-games-2.27.5/configure	2009-07-28 10:19:22.000000000 +1000
+@@ -21810,12 +21810,15 @@
          pkg_cv_GNOME_CFLAGS="$GNOME_CFLAGS"
      else
          if test -n "$PKG_CONFIG" && \
@@ -21,7 +21,7 @@ Index: gnome-games-2.27.4/configure
  else
    pkg_failed=yes
  fi
-@@ -21817,12 +21820,15 @@
+@@ -21828,12 +21831,15 @@
          pkg_cv_GNOME_LIBS="$GNOME_LIBS"
      else
          if test -n "$PKG_CONFIG" && \
@@ -40,7 +40,7 @@ Index: gnome-games-2.27.4/configure
  else
    pkg_failed=yes
  fi
-@@ -21841,14 +21847,17 @@
+@@ -21852,14 +21858,17 @@
          _pkg_short_errors_supported=no
  fi
          if test $_pkg_short_errors_supported = yes; then
@@ -61,7 +61,7 @@ Index: gnome-games-2.27.4/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -21859,7 +21868,8 @@
+@@ -21870,7 +21879,8 @@
  and GNOME_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  " >&5
@@ -71,75 +71,75 @@ Index: gnome-games-2.27.4/configure
  
  $GNOME_PKG_ERRORS
  
-@@ -24215,7 +24225,7 @@
+@@ -24227,7 +24237,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 24218: $i/$j" >&5
-+    echo "configure: 24228: $i/$j" >&5
+-    echo "configure: 24230: $i/$j" >&5
++    echo "configure: 24240: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -24489,7 +24499,7 @@
+@@ -24501,7 +24511,7 @@
  do
    for j in $ggzcore_header;
    do
--    echo "configure: 24492: $i/$j" >&5
-+    echo "configure: 24502: $i/$j" >&5
+-    echo "configure: 24504: $i/$j" >&5
++    echo "configure: 24514: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzcore_incdir=$i
-@@ -24662,7 +24672,7 @@
+@@ -24674,7 +24684,7 @@
  do
    for j in $ggzmod_header;
    do
--    echo "configure: 24665: $i/$j" >&5
-+    echo "configure: 24675: $i/$j" >&5
+-    echo "configure: 24677: $i/$j" >&5
++    echo "configure: 24687: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzmod_incdir=$i
-@@ -24802,7 +24812,7 @@
+@@ -24814,7 +24824,7 @@
  do
    for j in ggz-config;
    do
--    echo "configure: 24805: $i/$j" >&5
-+    echo "configure: 24815: $i/$j" >&5
+-    echo "configure: 24817: $i/$j" >&5
++    echo "configure: 24827: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggz_config_dir=$i
-@@ -25020,7 +25030,7 @@
+@@ -25032,7 +25042,7 @@
  do
    for j in $libggz_header;
    do
--    echo "configure: 25023: $i/$j" >&5
-+    echo "configure: 25033: $i/$j" >&5
+-    echo "configure: 25035: $i/$j" >&5
++    echo "configure: 25045: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        libggz_incdir=$i
-@@ -25310,7 +25320,7 @@
+@@ -25322,7 +25332,7 @@
  do
    for j in $ggzdmod_header;
    do
--    echo "configure: 25313: $i/$j" >&5
-+    echo "configure: 25323: $i/$j" >&5
+-    echo "configure: 25325: $i/$j" >&5
++    echo "configure: 25335: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ggzdmod_incdir=$i
-@@ -26425,7 +26435,7 @@
+@@ -26437,7 +26447,7 @@
  do
    for j in $gnutls_header;
    do
--    echo "configure: 26428: $i/$j" >&5
-+    echo "configure: 26438: $i/$j" >&5
+-    echo "configure: 26440: $i/$j" >&5
++    echo "configure: 26450: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        gnutls_incdir=$i
-@@ -26516,7 +26526,7 @@
+@@ -26528,7 +26538,7 @@
  do
    for j in openssl/ssl.h;
    do
--    echo "configure: 26519: $i/$j" >&5
-+    echo "configure: 26529: $i/$j" >&5
+-    echo "configure: 26531: $i/$j" >&5
++    echo "configure: 26541: $i/$j" >&5
      if test -r "$i/$j"; then
        echo "taking that" >&5
        ssl_incdir=$i
