@@ -7,6 +7,8 @@ gnome-games (1:2.27.5-0ubuntu1) UNRELEASED; urgency=low
   * debian/patches/01_lpi.patch:
   * debian/patches/99_autotools.patch:
     - Refreshed
+  * debian/rules:
+    - Compile with --enable-introspection=no for now
 
  -- Robert Ancell <robert.ancell@canonical.com>  Tue, 28 Jul 2009 10:05:19 +1000
 
