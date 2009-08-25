@@ -1,0 +1,8 @@
+debian/tmp/usr/games/same-gnome
+debian/tmp/usr/share/applications/same-gnome.desktop
+debian/pixmaps/same-gnome.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-samegnome.*
+debian/tmp/usr/share/gnome-games/same-gnome
+debian/tmp/usr/share/gnome/help/same-gnome
+debian/tmp/usr/share/omf/same-gnome
+debian/tmp/etc/gconf/schemas/same-gnome.schemas

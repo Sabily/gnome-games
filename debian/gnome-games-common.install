@@ -1,0 +1,7 @@
+debian/tmp/usr/lib/gnome-games
+debian/tmp/usr/share/locale/
+debian/tmp/usr/share/gnome-games-common/
+debian/tmp/usr/share/gnome-games/icons/
+debian/tmp/usr/share/gnome-games/pixmaps/
+debian/tmp/usr/share/gnome-games/sounds/
+debian/tmp/usr/share/ggz/

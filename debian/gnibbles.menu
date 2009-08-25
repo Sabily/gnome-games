@@ -1,0 +1,3 @@
+?package(gnome-games):needs="X11" section="Games/Action" \
+	title="Gnibbles" command="/usr/games/gnibbles" \
+	icon="/usr/share/pixmaps/gnibbles.xpm"

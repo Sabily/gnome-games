@@ -1,0 +1,10 @@
+debian/tmp/usr/games/glchess
+debian/tmp/usr/games/gnome-gnuchess
+debian/tmp/usr/share/applications/glchess.desktop
+debian/pixmaps/glchess.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-glchess.*
+debian/tmp/usr/share/glchess
+debian/tmp/usr/share/gnome/help/glchess
+debian/tmp/usr/share/omf/glchess
+debian/tmp/etc/gconf/schemas/glchess.schemas
+debian/tmp/usr/lib/python*/*/glchess

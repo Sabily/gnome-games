@@ -1,0 +1,8 @@
+debian/tmp/usr/games/gnibbles
+debian/tmp/usr/share/applications/gnibbles.desktop
+debian/pixmaps/gnibbles.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-gnibbles.*
+debian/tmp/usr/share/gnome-games/gnibbles
+debian/tmp/usr/share/gnome/help/gnibbles
+debian/tmp/usr/share/omf/gnibbles
+debian/tmp/etc/gconf/schemas/gnibbles.schemas

@@ -1,0 +1,8 @@
+debian/tmp/usr/games/blackjack
+debian/tmp/usr/share/applications/blackjack.desktop
+debian/pixmaps/blackjack.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-blackjack.*
+debian/tmp/usr/share/gnome-games/blackjack
+debian/tmp/usr/share/gnome/help/blackjack
+debian/tmp/usr/share/omf/blackjack
+debian/tmp/etc/gconf/schemas/blackjack.schemas

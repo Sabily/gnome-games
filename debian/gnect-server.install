@@ -1,0 +1,3 @@
+debian/tmp/usr/lib/ggz/gnectd
+debian/tmp/etc/ggzd/games/gnect-server.dsc
+debian/tmp/etc/ggzd/rooms/gnect.room

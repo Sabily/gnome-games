@@ -1,0 +1,3 @@
+?package(gnome-games):needs="X11" section="Games/Card" \
+	title="Gnome Solitaire Games" command="/usr/games/sol" \
+	icon="/usr/share/pixmaps/aisleriot.xpm"

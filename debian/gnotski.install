@@ -1,0 +1,8 @@
+debian/tmp/usr/games/gnotski
+debian/tmp/usr/share/applications/gnotski.desktop
+debian/pixmaps/gnotski.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-klotski.*
+debian/tmp/usr/share/gnome-games/gnotski
+debian/tmp/usr/share/gnome/help/gnotski
+debian/tmp/usr/share/omf/gnotski
+debian/tmp/etc/gconf/schemas/gnotski.schemas

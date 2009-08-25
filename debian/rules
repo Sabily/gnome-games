@@ -14,17 +14,19 @@ DEB_CONFIGURE_EXTRA_FLAGS := --bindir=\$${prefix}/games \
 		--with-ggzconfig=/usr/bin \
 		--with-ggz-server=force \
 		--disable-scrollkeeper \
-		--enable-omitgames=gnometris \
 		--enable-introspection=no
 DEB_DH_FIXPERMS_ARGS := -X/usr/games
 DEB_DH_MAKESHLIBS_ARGS_gnome-games := --no-act
 DEB_CONFIGURE_SCRIPT_ENV += LDFLAGS="-Wl,-z,defs -Wl,-O1 -Wl,--as-needed"
 
-binary-post-install/gnome-games::
-	chmod u+w debian/gnome-games/usr/games/*
+binary-post-install/glchess::
+	dh_pysupport -pglchess
 
-binary-post-install/gnome-games-data::
-	dh_pysupport -pgnome-games-data
+binary-post-install/glchess-data::
+	dh_pysupport -pglchess-data
 
-binary-post-install/gnome-games::
-	dh_pysupport -pgnome-games
+binary-post-install/gnome-sudoku::
+	dh_pysupport -pgnome-sudoku
+
+binary-post-install/gnome-sudoku-data::
+	dh_pysupport -pgnome-sudoku-data

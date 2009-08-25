@@ -1,0 +1,3 @@
+debian/tmp/usr/lib/ggz/gnibblesd
+debian/tmp/etc/ggzd/games/gnibbles-server.dsc
+debian/tmp/etc/ggzd/rooms/gnibbles.room

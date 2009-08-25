@@ -1,0 +1,8 @@
+debian/tmp/usr/games/gtali
+debian/tmp/usr/share/applications/gtali.desktop
+debian/pixmaps/gtali.xpm /usr/share/pixmaps
+debian/tmp/usr/share/icons/hicolor/*/apps/gnome-tali.*
+debian/tmp/usr/share/gnome-games/gtali
+debian/tmp/usr/share/gnome/help/gtali
+debian/tmp/usr/share/omf/gtali
+debian/tmp/etc/gconf/schemas/gtali.schemas

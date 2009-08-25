@@ -31,27 +31,30 @@ Build-Depends: cdbs,
                libggz-gtk-dev (>= 0.0.14),
                libcanberra-gtk-dev,
                check,
-               liblaunchpad-integration-dev (>= 0.1.17)                
+               liblaunchpad-integration-dev (>= 0.1.17)
 Standards-Version: 3.8.0
 Homepage: http://www.gnome.org/projects/gnome-games/
 
 Package: gnome-games
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         gnome-games-data (>= ${gnome:Version}),
-         gnome-games-data (<< ${gnome:NextVersion}),
-         librsvg2-common,
-         ${python:Depends},
-         python-gtk2 (>= 2.10.0),
-         python-launchpad-integration
-Suggests: python-gtkglext1, python-opengl, gnome-hearts, gnome-games-extra-data
-Conflicts: gnome-sudoku,
-           glchess
-Replaces: gnome-sudoku,
-          glchess
-Provides: gnome-sudoku,
-          glchess
+Architecture: all
+Depends: aisleriot,
+         blackjack,
+         freecell,
+         glchess,
+         glines,
+         gnect,
+         gnibbles,
+         gnobots2,
+         gnome-sudoku,
+         gnomine,
+         gnotravex,
+         gnotski,
+         gtali,
+         iagno,
+         mahjongg,
+         same-gnome
+Suggests: gnome-hearts,
+          gnome-games-servers
 Description: games for the GNOME desktop
  These are the games from the official GNOME release. They have the look and
  feel of the GNOME desktop, but can be used without it.
@@ -59,6 +62,7 @@ Description: games for the GNOME desktop
  The package contains the following games:
   * aisleriot - different solitaire card games
   * blackjack - the casino card game
+  * freecell - solitaire card game
   * glchess - chess game with 3D graphics
   * glines - color lines game, aka fiveormore
   * gnect - four in a row game
@@ -73,43 +77,179 @@ Description: games for the GNOME desktop
   * mahjongg - classic Eastern tile game
   * same-gnome - remove as many balls in as few moves as possible
 
-Package: gnome-games-data
+Package: gnome-games-servers
 Architecture: all
 Depends: ${misc:Depends},
-         ${python:Depends},
-         gnome-cards-data (>= ${gnome:Version}),
-         gnome-cards-data (<< ${gnome:NextVersion})
-Conflicts: gnome-games (<= 1:2.10.1-2),
-           gnome-icon-theme (<< 2.14),
-           glchess (<< 2.22),
-           gnome-sudoku (<< 2.22)
-Replaces: gnome-card-games,
-          gnome-games-locale,
-          glchess,
-          gnome-sudoku
-Recommends: gnome-games
-Description: data files for the GNOME games
- This package contains the data files, sound and pictures used by the
- GNOME games.
-
-Package: gnome-cards-data
-Architecture: all
-Depends: ${misc:Depends}
-Conflicts: gnome-games-data (<< 1:2.14.2.1-1),
-           gnome-games (<< 1:2.20),
-           gnome-hearts (<< 0.1.3-4)
-Description: data files for the GNOME card games
- This package contains pictures of card decks used by the card-based 
- GNOME games. Different themes are provided.
-
-Package: gnome-games-servers
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
-Recommends: ggzd
+         gnect-server,
+         gnibbles-server,
+         iagno-server
 Description: GGZ gaming zone servers for the GNOME games
- This package is needed if you want to host a GGZ gaming zone for the 
- GNOME games with network support:
-  * gnect - four in a row game
-  * gnibbles - snake game, up to four players
-  * iagno - the popular Othello game
+
+Package: aisleriot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Different solitaire card games
+
+Package: blackjack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: The casino card game
+
+Package: glchess
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ${python:Depends},
+         gnome-games-common (= ${source:Version}),
+         python-gtk2 (>= 2.10.0),
+         python-launchpad-integration
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Suggests: python-gtkglext1, python-opengl
+Description: Chess game with 3D graphics
+
+Package: glines
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Color lines game, aka fiveormore
+
+Package: gnect
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Suggests: gnect-server	 
+Description: Four in a row game
+
+Package: gnect-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Recommends: ggzd
+Description: GGZ gaming zone server for gnect
+
+Package: gnibbles
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Suggests: gnibbles-server
+Description: Snake game, up to four players
+
+Package: gnibbles-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Recommends: ggzd
+Description: GGZ gaming zone server for gnibbles
+
+Package: gnobots2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Improved old BSD robots game
+
+Package: freecell
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	 aisleriot (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Different solitaire card games
+
+Package: gnome-sudoku
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ${python:Depends},
+         gnome-games-common (= ${source:Version}),
+         python-gtk2 (>= 2.10.0),
+         python-launchpad-integration
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Sudoku puzzle
+
+Package: gnomine
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Popular minesweeper puzzle game
+
+Package: gnotravex
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Puzzle where you match tile edges together
+
+Package: gnotski
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Klotski puzzle game
+
+Package: gtali
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+cription: Sort of poker with dice and less money
+
+Package: iagno
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Suggests: iagno-server
+Description: The popular Othello game
+
+Package: iagno-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Recommends: ggzd
+Description: GGZ gaming zone server for iagno
+
+Package: mahjongg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Classic Eastern tile game
+
+Package: same-gnome
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         gnome-games-common (= ${source:Version})
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Description: Remove as many balls in as few moves as possible
+
+Package: gnome-games-common
+Architecture: any
+Depends: ${misc:Depends}
+Replaces: gnome-cards-data
+Provides: gnome-cards-data
+Description: Common files for GNOME Games
