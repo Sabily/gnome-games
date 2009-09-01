@@ -6,6 +6,7 @@ gnome-games (1:2.27.90-0ubuntu1) UNRELEASED; urgency=low
   * debian/_game_.install:
   * debian/_game_.menu:
     - Split games into separate packages (LP: #376744)
+    - Re-enable gnometris (LP: #415464)
   * debian/patches/99_autotools.patch:
     - Refreshed
 
