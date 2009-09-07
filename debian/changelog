@@ -1,6 +1,12 @@
-gnome-games (1:2.27.90-0ubuntu1+sabily1) karmic; urgency=low
+gnome-games (1:2.27.90-0ubuntu1+sabily2) karmic; urgency=low
 
   * Disabled card & dice games for Sabily.
+  * debian/control:
+    + Bump Standards-Version to 3.8.3, no changes needed.
+    + Enable gnometris.
+    + s/${source:Version}/${binary:Version} to make packages safely
+      binNMUable.
+  * Added debian/README.source
 
  -- أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@users.sourceforge.net>  Mon, 07 Sep 2009 11:33:20 +0200
 
