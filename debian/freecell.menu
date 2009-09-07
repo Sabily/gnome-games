@@ -1,3 +1,0 @@
-?package(gnome-games):needs="X11" section="Games/Card" \
-	title="Gnome FreeCell" command="/usr/games/sol --variation freecell" \
-	icon="/usr/share/pixmaps/freecell.xpm"

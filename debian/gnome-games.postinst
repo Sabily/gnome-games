@@ -80,8 +80,6 @@ gnotski.34.scores \
 gnotski.35.scores \
 gnotski.36.scores \
 gnotski.37.scores \
-gtali.Colors.scores \
-gtali.Regular.scores \
 mahjongg.bridges.scores \
 mahjongg.cloud.scores \
 mahjongg.confounding.scores \
@@ -104,10 +102,6 @@ for GAME in glines same-gnome; do
 	mv -f /var/games/$GAME.scores /var/games/$GAME.Small.scores
     fi
 done
-
-if [ -f /var/games/gtali.scores ] && [ ! -e /var/games/gtali.Regular.scores ]; then
-    mv -f /var/games/gtali.scores /var/games/gtali.Regular.scores
-fi
 
 for FILES in $SCORE_FILES; do
 

@@ -39,10 +39,7 @@ Homepage: http://www.gnome.org/projects/gnome-games/
 
 Package: gnome-games
 Architecture: all
-Depends: aisleriot,
-         blackjack,
-         freecell,
-         glchess,
+Depends: glchess,
          glines,
          gnect,
          gnibbles,
@@ -52,7 +49,6 @@ Depends: aisleriot,
          gnomine,
          gnotravex,
          gnotski,
-         gtali,
          iagno,
          mahjongg,
          same-gnome
@@ -63,9 +59,6 @@ Description: games for the GNOME desktop
  feel of the GNOME desktop, but can be used without it.
  .
  The package contains the following games:
-  * aisleriot - different solitaire card games
-  * blackjack - the casino card game
-  * freecell - solitaire card game
   * glchess - chess game with 3D graphics
   * glines - color lines game, aka fiveormore
   * gnect - four in a row game
@@ -76,7 +69,6 @@ Description: games for the GNOME desktop
   * gnomine - popular minesweeper puzzle game
   * gnotravex - puzzle where you match tile edges together
   * gnotski - klotski puzzle game
-  * gtali - sort of poker with dice and less money
   * iagno - the popular Othello game
   * mahjongg - classic Eastern tile game
   * same-gnome - remove as many balls in as few moves as possible
@@ -88,22 +80,6 @@ Depends: ${misc:Depends},
          gnibbles-server,
          iagno-server
 Description: GGZ gaming zone servers for the GNOME games
-
-Package: aisleriot
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         gnome-games-common (= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
-Description: Different solitaire card games
-
-Package: blackjack
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         gnome-games-common (= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
-Description: The casino card game
 
 Package: glchess
 Architecture: any
@@ -167,14 +143,6 @@ Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
 Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Description: Improved old BSD robots game
 
-Package: freecell
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends},
-	 aisleriot (= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
-Description: Different solitaire card games
-
 Package: gnome-sudoku
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
@@ -217,14 +185,6 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
 Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
 Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Description: Klotski puzzle game
-
-Package: gtali
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         gnome-games-common (= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
-cription: Sort of poker with dice and less money
 
 Package: iagno
 Architecture: any

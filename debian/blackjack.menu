@@ -1,3 +1,0 @@
-?package(gnome-games):needs="X11" section="Games/Card" \
-	title="Gnome Blackjack" command="/usr/games/blackjack" \
-	icon="/usr/share/pixmaps/blackjack.xpm"

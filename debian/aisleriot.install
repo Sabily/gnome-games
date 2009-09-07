@@ -1,8 +1,0 @@
-debian/tmp/usr/games/sol
-debian/tmp/usr/share/applications/sol.desktop
-debian/pixmaps/aisleriot.xpm /usr/share/pixmaps
-debian/tmp/usr/share/icons/hicolor/*/apps/gnome-aisleriot.*
-debian/tmp/usr/share/gnome-games/aisleriot
-debian/tmp/usr/share/gnome/help/aisleriot
-debian/tmp/usr/share/omf/aisleriot
-debian/tmp/etc/gconf/schemas/aisleriot.schemas
