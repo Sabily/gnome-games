@@ -40,8 +40,8 @@ Homepage: http://www.gnome.org/projects/gnome-games/
 Package: gnome-games
 Architecture: all
 Depends: aisleriot,
-         blackjack,
-         freecell,
+         gnome-blackjack,
+         gnome-freecell,
          glchess,
          glines,
          gnect,
@@ -54,7 +54,7 @@ Depends: aisleriot,
          gnotski,
          gtali,
          iagno,
-         mahjongg,
+         gnome-mahjongg,
          same-gnome
 Suggests: gnome-hearts,
           gnome-games-servers
@@ -63,23 +63,23 @@ Description: games for the GNOME desktop
  feel of the GNOME desktop, but can be used without it.
  .
  The package contains the following games:
-  * aisleriot - different solitaire card games
-  * blackjack - the casino card game
-  * freecell - solitaire card game
-  * glchess - chess game with 3D graphics
-  * glines - color lines game, aka fiveormore
-  * gnect - four in a row game
-  * gnibbles - snake game, up to four players
-  * gnobots2 - improved old BSD robots game
-  * gnome-sudoku - Sudoku puzzle
-  * gnometris - falling blocks game
-  * gnomine - popular minesweeper puzzle game
-  * gnotravex - puzzle where you match tile edges together
-  * gnotski - klotski puzzle game
-  * gtali - sort of poker with dice and less money
-  * iagno - the popular Othello game
-  * mahjongg - classic Eastern tile game
-  * same-gnome - remove as many balls in as few moves as possible
+  * Aisleriot - different solitaire card games
+  * Blackjack - the casino card game
+  * Freecell - solitaire card game
+  * Chess - chess game with 3D graphics
+  * Five or More - color lines game, aka fiveormore
+  * Four-in-a-row - four in a row game
+  * Gnometris - falling blocks game
+  * Iagno - the popular Othello game
+  * Klotski - klotski puzzle game
+  * Mines - popular minesweeper puzzle game
+  * Mahjongg - classic Eastern tile game
+  * Nibbles - snake game, up to four players
+  * Robots - improved old BSD robots game
+  * Same Gnome - remove as many balls in as few moves as possible
+  * Sudoku - Sudoku puzzle
+  * Tali - sort of poker with dice and less money
+  * Tetravex - puzzle where you match tile edges together
 
 Package: gnome-games-servers
 Architecture: all
@@ -97,7 +97,7 @@ Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
 Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Description: Different solitaire card games
 
-Package: blackjack
+Package: gnome-blackjack
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${source:Version})
@@ -167,7 +167,7 @@ Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
 Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Description: Improved old BSD robots game
 
-Package: freecell
+Package: gnome-freecell
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
 	 aisleriot (= ${source:Version})
@@ -243,7 +243,7 @@ Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Recommends: ggzd
 Description: GGZ gaming zone server for iagno
 
-Package: mahjongg
+Package: gnome-mahjongg
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${source:Version})

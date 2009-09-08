@@ -19,6 +19,15 @@ DEB_DH_FIXPERMS_ARGS := -X/usr/games
 DEB_DH_MAKESHLIBS_ARGS_gnome-games := --no-act
 DEB_CONFIGURE_SCRIPT_ENV += LDFLAGS="-Wl,-z,defs -Wl,-O1 -Wl,--as-needed"
 
+binary-post-install/aisleriot::
+	dh_installman -paisleriot debian/sol.6
+
+binary-post-install/gnome-blackjack::
+	dh_installman -pgnome-blackjack debian/blackjack.6
+
+binary-post-install/gnome-mahjongg::
+	dh_installman -pgnome-mahjongg debian/mahjongg.6
+
 binary-post-install/glchess::
 	dh_pysupport -pglchess
 
