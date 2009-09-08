@@ -89,8 +89,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version}),
          python-gtk2 (>= 2.10.0),
          python-launchpad-integration
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: python-gtkglext1, python-opengl
 Description: Chess game with 3D graphics
 
@@ -98,16 +98,16 @@ Package: glines
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Color lines game, aka fiveormore
 
 Package: gnect
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: gnect-server	 
 Description: Four in a row game
 
@@ -123,8 +123,8 @@ Package: gnibbles
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: gnibbles-server
 Description: Snake game, up to four players
 
@@ -140,8 +140,8 @@ Package: gnobots2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Improved old BSD robots game
 
 Package: gnome-sudoku
@@ -151,48 +151,48 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version}),
          python-gtk2 (>= 2.10.0),
          python-launchpad-integration
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Sudoku puzzle
 
 Package: gnometris
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Falling blocks game
 
 Package: gnomine
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Popular minesweeper puzzle game
 
 Package: gnotravex
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Puzzle where you match tile edges together
 
 Package: gnotski
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Klotski puzzle game
 
 Package: iagno
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: iagno-server
 Description: The popular Othello game
 
@@ -208,16 +208,16 @@ Package: mahjongg
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Classic Eastern tile game
 
 Package: same-gnome
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Remove as many balls in as few moves as possible
 
 Package: gnome-games-common

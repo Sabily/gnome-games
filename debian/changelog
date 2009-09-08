@@ -1,4 +1,4 @@
-gnome-games (1:2.27.90-0ubuntu1+sabily2) karmic; urgency=low
+gnome-games (1:2.27.90-0ubuntu1+sabily3) karmic; urgency=low
 
   * Disabled card & dice games for Sabily.
   * debian/control*:
@@ -7,6 +7,8 @@ gnome-games (1:2.27.90-0ubuntu1+sabily2) karmic; urgency=low
     + s/${source:Version}/${binary:Version} to make packages safely
       binNMUable.
     + Add ${misc:Depends} to gnome-games' Depends field.
+    + Added gnome-games-data (<< 1:2.27.5-0ubuntu2) to Conflicts & Replaces 
+      of individual game packages.
   * debian/gnome-games-common.install: removed usr/share/gnome-games-common as
     it does not exist.
   * Added debian/README.source
