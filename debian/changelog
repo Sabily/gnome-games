@@ -1,4 +1,4 @@
-gnome-games (1:2.27.90-0ubuntu1+sabily3) karmic; urgency=low
+gnome-games (1:2.27.90-0ubuntu1+sabily4) karmic; urgency=low
 
   * Disabled card & dice games for Sabily.
   * debian/control*:
