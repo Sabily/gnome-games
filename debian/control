@@ -51,7 +51,7 @@ Depends: ${misc:Depends},
          gnotravex,
          gnotski,
          iagno,
-         mahjongg,
+         gnome-mahjongg,
          same-gnome
 Suggests: gnome-hearts,
           gnome-games-servers
@@ -60,19 +60,19 @@ Description: games for the GNOME desktop
  feel of the GNOME desktop, but can be used without it.
  .
  The package contains the following games:
-  * glchess - chess game with 3D graphics
-  * glines - color lines game, aka fiveormore
-  * gnect - four in a row game
-  * gnibbles - snake game, up to four players
-  * gnobots2 - improved old BSD robots game
-  * gnome-sudoku - Sudoku puzzle
-  * gnometris - falling blocks game
-  * gnomine - popular minesweeper puzzle game
-  * gnotravex - puzzle where you match tile edges together
-  * gnotski - klotski puzzle game
-  * iagno - the popular Othello game
-  * mahjongg - classic Eastern tile game
-  * same-gnome - remove as many balls in as few moves as possible
+  * Chess - chess game with 3D graphics
+  * Five or More - color lines game, aka fiveormore
+  * Four-in-a-row - four in a row game
+  * Gnometris - falling blocks game
+  * Iagno - the popular Othello game
+  * Klotski - klotski puzzle game
+  * Mines - popular minesweeper puzzle game
+  * Mahjongg - classic Eastern tile game
+  * Nibbles - snake game, up to four players
+  * Robots - improved old BSD robots game
+  * Same Gnome - remove as many balls in as few moves as possible
+  * Sudoku - Sudoku puzzle
+  * Tetravex - puzzle where you match tile edges together
 
 Package: gnome-games-servers
 Architecture: all
@@ -204,7 +204,7 @@ Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
 Recommends: ggzd
 Description: GGZ gaming zone server for iagno
 
-Package: mahjongg
+Package: gnome-mahjongg
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-games-common (= ${binary:Version})

@@ -21,6 +21,9 @@ DEB_DH_MAKESHLIBS_ARGS_gnome-games := --no-act
 DEB_CONFIGURE_SCRIPT_ENV += LDFLAGS="-Wl,-z,defs -Wl,-O1 -Wl,--as-needed"
 DEB_DH_INSTALL_ARGS := -Xtali -Xaisleriot -Xblackjack -Xfreecell
 
+binary-post-install/gnome-mahjongg::
+	dh_installman -pgnome-mahjongg debian/mahjongg.6
+
 binary-post-install/glchess::
 	dh_pysupport -pglchess
 
