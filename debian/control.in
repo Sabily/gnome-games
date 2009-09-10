@@ -96,8 +96,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Solitaire card games
  A compilation of over eighty different solitaire card games. Everything from
  favorites like Freecell and Klondike through to the hopelessly pointless Clock
@@ -108,8 +108,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Blackjack casino card game
  The casino card game without any need to actually pay your gambling debts.
 
@@ -121,8 +121,8 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version}),
          python-gtk2 (>= 2.10.0),
          python-launchpad-integration
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: python-gtkglext1, python-opengl
 Description: Chess strategy game
  The ancient chess strategy game. Play against computer oponents, online in 2D
@@ -133,8 +133,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Five or More puzzle game
  Move balls around the grid and try and form lines. Once you form five in a row,
  the line disappears. Unfortunately more balls keep dropping in.
@@ -144,8 +144,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: gnect-server	 
 Description: Four in a Row strategy game
  Place disks one at a time and try to form a row of four. Tic-tac-toe for those
@@ -155,8 +155,8 @@ Package: gnect-server
 Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Recommends: ggzd
 Description: Four in a Row server
  GGZ gaming zone server for Four in a Row.
@@ -166,8 +166,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: gnibbles-server
 Description: Worm arcade game
  Pilot a worm around a maze trying to collect diamonds and at the same time
@@ -178,8 +178,8 @@ Package: gnibbles-server
 Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Recommends: ggzd
 Description: GNibbles server
  GGZ gaming zone server for GNibbles.
@@ -189,8 +189,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Avoid robots game
  The classic game where you have to avoid a hoard of robots who are trying to
  kill you. Each step you take brings them closer toward you. Fortunately they
@@ -204,8 +204,8 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version}),
          python-gtk2 (>= 2.10.0),
          python-launchpad-integration
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Sudoku number puzzle
  Fit numbers into a grid without repeating numbers in rows, columns or boxes.
 
@@ -214,8 +214,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Falling blocks game
  The Russian game of falling geometric shapes. Fit blocks together to make
  complete rows.
@@ -225,8 +225,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Minesweeper logic puzzle game
  Find mines on a grid using hints from squares you have already cleared. 
 
@@ -235,8 +235,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Tile puzzle game
  A puzzle game where you have to match a grid of tiles together. The skill level
  ranges from the simple two by two up to the seriously mind-bending six by six
@@ -247,8 +247,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Sliding block puzzle game
  A series of sliding block puzzles. Try and solve them in the least number of
  moves.
@@ -258,8 +258,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Dice chance game
  Roll five dice three times to make the best "hand".
 
@@ -268,8 +268,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Suggests: iagno-server
 Description: Tile flipping strategy game
  Flip over your opponents tiles and control the board.
@@ -278,8 +278,8 @@ Package: iagno-server
 Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Recommends: ggzd
 Description: Iagno server
  GGZ gaming zone server for Iagno.
@@ -289,8 +289,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Mahjongg tile solitaire game
  A tile-based solitaire game. Remove tiles in matching pairs to dismantle
  elaborately designed stacks.
@@ -300,8 +300,8 @@ Section: games
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
          gnome-games-common (>= ${source:Version})
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
+Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
+Replaces: gnome-games (<< 1:2.27.5-0ubuntu2), gnome-games-data (<< 1:2.27.5-0ubuntu2)
 Description: Colored ball puzzle game
  Remove blocks of balls of the same color in as few moves as possible. Try to
  remove all balls for a bonus.
@@ -312,6 +312,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: gnome-cards-data
 Provides: gnome-cards-data
+Conflicts: gnome-cards-data
 Description: Common files for GNOME Games
  Translations, images, sounds used by more than one game in the GNOME games
  collection.

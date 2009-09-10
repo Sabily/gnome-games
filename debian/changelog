@@ -1,5 +1,6 @@
 gnome-games (1:2.27.92-0ubuntu1) UNRELEASED; urgency=low
 
+  [ Robert Ancell ]
   * New upstream release: (LP: #417900)
     - Fixes (LP: #400931), (LP: #421874), (LP: #154683), (LP: #387903),
       (LP: #389889), (LP: #411966), (LP: #426354)
@@ -13,6 +14,9 @@ gnome-games (1:2.27.92-0ubuntu1) UNRELEASED; urgency=low
     - Re-enable gnometris (LP: #415464)
   * debian/patches/99_autotools.patch:
     - Refreshed
+
+  [ Martin Pitt ]
+  * debian/control.in: Add missing Conflicts:/Replaces: to gnome-games-data.
 
  -- Robert Ancell <robert.ancell@canonical.com>  Thu, 10 Sep 2009 11:35:46 +1000
 
