@@ -1,16 +1,20 @@
-gnome-games (1:2.27.90-0ubuntu1) UNRELEASED; urgency=low
+gnome-games (1:2.27.92-0ubuntu1) UNRELEASED; urgency=low
 
+  * New upstream release: (LP: #417900)
+    - Fixes (LP: #400931), (LP: #421874), (LP: #154683), (LP: #387903),
+      (LP: #389889), (LP: #411966), (LP: #426354)
   * debian/rules:
     - Compile with --enable-introspection=no
   * debian/control.in:
   * debian/_game_.install:
   * debian/_game_.menu:
+  * debian/_game_.manpages:  
     - Split games into separate packages (LP: #376744)
     - Re-enable gnometris (LP: #415464)
   * debian/patches/99_autotools.patch:
     - Refreshed
 
- -- Robert Ancell <robert.ancell@canonical.com>  Fri, 07 Aug 2009 11:32:17 +0100
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 10 Sep 2009 11:35:46 +1000
 
 gnome-games (1:2.27.5-0ubuntu1) karmic; urgency=low
 
@@ -35,7 +39,8 @@ gnome-games (1:2.27.4-0ubuntu1) karmic; urgency=low
 
 gnome-games (1:2.27.3-0ubuntu2) karmic; urgency=low
 
-  * debian/rules: Run with --disable-tests so don't need build-depends on 'check' (LP: #388834)
+  * debian/rules: Run with --disable-tests so don't need build-depends on
+                  'check' (LP: #388834)
 
  -- Robert Ancell <robert.ancell@canonical.com>  Thu, 18 Jun 2009 17:50:36 +1000
 
@@ -204,15 +209,15 @@ gnome-games (1:2.25.5-0ubuntu1) jaunty; urgency=low
     - adapt to new upstream version
     - remove old LPI implementation for gnothello (depending on libgnomeui)
       to use GtkBuilder
-    - add Launchpad integration for glchess (using glade) and gnome-sudoku (using
-      GtkBuilder) (LP: #155269)
+    - add Launchpad integration for glchess (using glade) and gnome-sudoku
+      (using GtkBuilder) (LP: #155269)
   * debian/patches/02_desktop-path.patch: adapt to new .desktop upstream version
   * debian/patches/70_autotools.patch:
    - run autoreconf in jaunty (libtool 2.2.6) to update the configure and a
      bunch of files
-  * debian/gnome-cards-data.install: take the whole gnome-games-common directory as
-    being only used for card games. theme-install.ini is now in gnome-cards-data
-    package.
+  * debian/gnome-cards-data.install: take the whole gnome-games-common directory
+    as being only used for card games. theme-install.ini is now in
+    gnome-cards-data package.
   * debian/control.in:
    - remove libgnome* dependencies
    - bump libgtk2.0-dev prereq to 2.14.0
