@@ -43,7 +43,6 @@ Architecture: all
 Depends: ${misc:Depends},
          aisleriot,
          gnome-blackjack,
-         gnome-freecell,
          glchess,
          glines,
          gnect,
@@ -67,7 +66,6 @@ Description: games for the GNOME desktop
  The package contains the following games:
   * Aisleriot - Solitaire card games
   * Blackjack - The casino card game
-  * Freecell - Solitaire card game
   * Chess - Strategy game
   * Five or More - Color lines game
   * Four-in-a-row - Strategy game
@@ -197,16 +195,6 @@ Description: Avoid robots game
  The classic game where you have to avoid a hoard of robots who are trying to
  kill you. Each step you take brings them closer toward you. Fortunately they
  aren't very smart and you also have a helpful teleportation gadget.
-
-Package: gnome-freecell
-Section: games
-Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends},
-	 aisleriot
-Conflicts: gnome-games (<< 1:2.27.5-0ubuntu2)
-Replaces: gnome-games (<< 1:2.27.5-0ubuntu2)
-Description: Freecell solitaire card game
- Solitaire card game, move cards random piles of cards into ordered stacks.
 
 Package: gnome-sudoku
 Section: games
