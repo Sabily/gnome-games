@@ -1,3 +1,3 @@
-?package(gnome-games):needs="X11" section="Games/Puzzles" \
+?package(gnome-sudoku):needs="X11" section="Games/Puzzles" \
 	title="Gnome Sudoku" command="/usr/games/gnome-sudoku" \
 	icon="/usr/share/pixmaps/gnome-sudoku.xpm"
