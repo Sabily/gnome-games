@@ -1,4 +1,4 @@
-gnome-games (1:2.27.92-0ubuntu1) UNRELEASED; urgency=low
+gnome-games (1:2.27.92-0ubuntu1) karmic; urgency=low
 
   [ Robert Ancell ]
   * New upstream release: (LP: #417900)
@@ -18,7 +18,7 @@ gnome-games (1:2.27.92-0ubuntu1) UNRELEASED; urgency=low
   [ Martin Pitt ]
   * debian/control.in: Add missing Conflicts:/Replaces: to gnome-games-data.
 
- -- Robert Ancell <robert.ancell@canonical.com>  Thu, 10 Sep 2009 11:35:46 +1000
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 10 Sep 2009 19:12:09 +0200
 
 gnome-games (1:2.27.5-0ubuntu1) karmic; urgency=low
 
