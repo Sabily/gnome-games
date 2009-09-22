@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnome-sudoku
+debian/tmp/usr/share/man/man6/gnome-sudoku.6
 debian/tmp/usr/share/applications/gnome-sudoku.desktop
 debian/pixmaps/gnome-sudoku.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-sudoku.*

@@ -1,4 +1,5 @@
 debian/tmp/usr/games/same-gnome
+debian/tmp/usr/share/man/man6/same-gnome.6
 debian/tmp/usr/share/applications/same-gnome.desktop
 debian/pixmaps/same-gnome.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-samegnome.*

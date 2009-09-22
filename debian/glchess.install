@@ -1,4 +1,5 @@
 debian/tmp/usr/games/glchess
+debian/tmp/usr/share/man/man6/glchess.6
 debian/tmp/usr/games/gnome-gnuchess
 debian/tmp/usr/share/applications/glchess.desktop
 debian/pixmaps/glchess.xpm /usr/share/pixmaps

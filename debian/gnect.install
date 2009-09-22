@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnect
+debian/tmp/usr/share/man/man6/gnect.6
 debian/tmp/usr/share/applications/gnect.desktop
 debian/pixmaps/gnect.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-gnect.*

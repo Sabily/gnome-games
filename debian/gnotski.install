@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnotski
+debian/tmp/usr/share/man/man6/gnotski.6
 debian/tmp/usr/share/applications/gnotski.desktop
 debian/pixmaps/gnotski.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-klotski.*

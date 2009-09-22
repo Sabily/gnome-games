@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnomine
+debian/tmp/usr/share/man/man6/gnomine.6
 debian/tmp/usr/share/applications/gnomine.desktop
 debian/pixmaps/gnomine.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-mines.*
