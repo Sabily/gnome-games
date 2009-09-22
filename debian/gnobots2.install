@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnobots2
+debian/tmp/usr/share/man/man6/gnobots2.6
 debian/tmp/usr/share/applications/gnobots2.desktop
 debian/pixmaps/gnobots2.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-robots.*

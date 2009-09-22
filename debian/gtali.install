@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gtali
+debian/tmp/usr/share/man/man6/gtali.6
 debian/tmp/usr/share/applications/gtali.desktop
 debian/pixmaps/gtali.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-tali.*

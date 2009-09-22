@@ -1,3 +1,18 @@
+gnome-games (1:2.28.0-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release (LP: #434335)
+    - glchess: Disable 3D mode after a crash in the 3D renderer (LP: #350850)
+    - glchess: Use previous AI for default game (LP: #392972)
+    - gtali: Make 24x24 icon look the same as 22x22 icon (LP: #426443)
+  * debian/*.6:
+  * debian/*.manpages:
+  * debian/*.install:
+    - Manpages now provided upstream
+  * debian/gnome-cards-data.install:
+    - Obsolete
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 22 Sep 2009 09:55:53 +1000
+
 gnome-games (1:2.27.92-0ubuntu1) karmic; urgency=low
 
   [ Robert Ancell ]

@@ -1,4 +1,5 @@
 debian/tmp/usr/games/gnotravex
+debian/tmp/usr/share/man/man6/gnotravex.6
 debian/tmp/usr/share/applications/gnotravex.desktop
 debian/pixmaps/gnotravex.xpm /usr/share/pixmaps
 debian/tmp/usr/share/icons/hicolor/*/apps/gnome-tetravex.*
