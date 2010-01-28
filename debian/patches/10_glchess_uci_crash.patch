@@ -1,0 +1,12 @@
+Index: gnome-games-2.28.0/glchess/src/lib/uci.py
+===================================================================
+--- gnome-games-2.28.0.orig/glchess/src/lib/uci.py	2010-01-27 13:13:19.586447023 +1100
++++ gnome-games-2.28.0/glchess/src/lib/uci.py	2010-01-27 13:13:25.474042095 +1100
+@@ -17,7 +17,6 @@
+         self.__readyToConfigure = False    
+         self.__ready            = False
+         self.__inCallback       = False
+-        self.__queuedCommands   = None
+         self.__positionCommand = 'position startpos'
+         
+     def logText(self, text, style):
