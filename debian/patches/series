@@ -1,4 +1,5 @@
 01_lpi.patch
 02_desktop-path.patch
+10_glchess_uci_crash.patch
 80_change_tetris_theme.patch
 99_autotools.patch
